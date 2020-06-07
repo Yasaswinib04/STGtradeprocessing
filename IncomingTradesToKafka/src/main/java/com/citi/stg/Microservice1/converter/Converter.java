@@ -1,9 +1,7 @@
 package com.citi.stg.Microservice1.converter;
 
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.Transformer;
@@ -43,8 +41,8 @@ public class Converter {
             StringWriter writer = new StringWriter();
             transformer.transform(new DOMSource(xmlDocument), new StreamResult(writer));
             String xmlString = writer.getBuffer().toString();
-
-            xmlString= StringUtils.substringBetween(xmlString,"<Trades>","</Trades>");
+            xmlString=StringUtils.replace(xmlString,"\n\t","\n");
+            xmlString= StringUtils.substringBetween(xmlString,"<Trades>","</Trades>").trim();
             return xmlString;
         }
         catch (Exception e)
