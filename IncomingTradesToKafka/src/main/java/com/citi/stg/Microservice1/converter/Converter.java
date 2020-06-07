@@ -13,7 +13,6 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.StringWriter;
 
-@Service
 public class Converter {
 
 
