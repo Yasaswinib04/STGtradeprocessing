@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Trades>
+	<Trade>
+					<TradeId>HNC234712121212</TradeId>
+					<Firm>SLI</Firm>
+					<CashSecurity>
+							<SecurityType>EQ</SecurityType>
+							<SecurityIdentifier>XX4567</SecurityIdentifier>
+					</CashSecurity>
+					<TradeDate>2020-05-13</TradeDate>
+	</Trade>
+</Trades>
