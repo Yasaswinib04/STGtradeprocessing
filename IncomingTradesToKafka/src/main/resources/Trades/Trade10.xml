@@ -5,7 +5,7 @@
 </Header>
 <Trades>
 	<Trade>
-					<TradeId>HKC03470000</TradeId>
+					<TradeId>HKC0347</TradeId>
 					<Firm>FAC</Firm>
 					<CashSecurity>
 							<SecurityType>CP</SecurityType>

@@ -5,7 +5,7 @@
 </Header>
 <Trades>
 	<Trade>
-					<TradeId>HEC53475555</TradeId>
+					<TradeId>HEC5347</TradeId>
 					<Firm>SLI</Firm>
 					<CashSecurity>
 							<SecurityType>CP</SecurityType>
