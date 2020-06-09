@@ -1,7 +1,7 @@
-package com.acknackgen;
+package com.acknackgen.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import com.acknackgen.Asset;
+import com.acknackgen.model.cache.Asset;
 
 public interface AssetRepository extends MongoRepository<Asset,String> {
 	

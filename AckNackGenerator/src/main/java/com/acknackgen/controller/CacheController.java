@@ -3,10 +3,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 
-import com.acknackgen.Asset;
-import com.acknackgen.AssetRepository;
-import com.acknackgen.Firm;
-import com.acknackgen.FirmRepository;
+import com.acknackgen.model.cache.Asset;
+import com.acknackgen.repository.AssetRepository;
+import com.acknackgen.model.cache.Firm;
+import com.acknackgen.repository.FirmRepository;
 
 @Controller
 public class CacheController {

@@ -11,8 +11,8 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.acknackgen.AckNackMicroservice;
-import com.acknackgen.Asset;
-import com.acknackgen.Firm;
+import com.acknackgen.model.cache.Asset;
+import com.acknackgen.model.cache.Firm;
 import com.acknackgen.controller.CacheController;
 import com.acknackgen.model.trade.CashSecurity;
 import com.acknackgen.model.trade.SourceError;

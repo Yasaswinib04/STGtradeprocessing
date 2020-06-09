@@ -1,7 +1,7 @@
-package com.acknackgen;
+package com.acknackgen.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import com.acknackgen.Firm;
+import com.acknackgen.model.cache.Firm;
 
 public interface FirmRepository extends MongoRepository<Firm,String> {
 	

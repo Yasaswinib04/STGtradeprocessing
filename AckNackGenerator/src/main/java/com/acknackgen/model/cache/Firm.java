@@ -1,4 +1,4 @@
-package com.acknackgen;
+package com.acknackgen.model.cache;
 
 import java.io.Serializable;
 

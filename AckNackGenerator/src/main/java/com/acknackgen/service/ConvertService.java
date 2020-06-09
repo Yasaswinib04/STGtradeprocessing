@@ -9,8 +9,8 @@ import javax.xml.bind.Marshaller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.acknackgen.Asset;
-import com.acknackgen.Firm;
+import com.acknackgen.model.cache.Asset;
+import com.acknackgen.model.cache.Firm;
 import com.acknackgen.controller.CacheController;
 import com.acknackgen.model.acknack.dest_Error;
 import com.acknackgen.model.acknack.dest_Trade;
