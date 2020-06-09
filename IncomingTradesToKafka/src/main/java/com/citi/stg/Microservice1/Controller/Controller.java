@@ -45,6 +45,7 @@ public class Controller implements ApplicationRunner {
                 watchKey=service.take();
                 for (WatchEvent<?> event : watchKey.pollEvents()){
                     Path eventPath = (Path)event.context();
+                    Thread.sleep(50);
                     new GenericTradeString(kafkaTemplate,topic,xmlpath+eventPath.getFileName().toString()).start();
                 }
             }while (watchKey.reset());

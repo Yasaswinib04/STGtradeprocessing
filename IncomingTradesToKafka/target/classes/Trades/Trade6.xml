@@ -5,7 +5,7 @@
 </Header>
 <Trades>
 	<Trade>
-					<TradeId>HFC63476666</TradeId>
+					<TradeId>HFC6347</TradeId>
 					<Firm>JDC</Firm>
 					<CashSecurity>
 							<SecurityType>FD</SecurityType>
