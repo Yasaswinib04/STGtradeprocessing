@@ -9,6 +9,9 @@ import javax.xml.bind.Marshaller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.acknackgen.Asset;
+import com.acknackgen.Firm;
+import com.acknackgen.controller.CacheController;
 import com.acknackgen.model.acknack.dest_Error;
 import com.acknackgen.model.acknack.dest_Trade;
 import com.acknackgen.model.trade.Trade;
@@ -19,16 +22,25 @@ public class ConvertService {
 	@Autowired
 	dest_Trade opTrade;
 	
+	@Autowired
+	CacheController cacheController;
 	//Method for changing to Xml		
 	public String convertObj(Trade trade){
 		
 		String opXml=null;
 		try {
-			opTrade.setClientName(trade.getFirm());
-			opTrade.setError(new dest_Error(trade.getError().getDescription(),trade.getError().getErrordt()));;
-			opTrade.setSecurityDescription(trade.getCashSecurity().getSecurityType());
+			
+			Firm firm=cacheController.findFirmByCode(trade.getFirm());
+			opTrade.setClientName(firm.getFirmDesc());
+			
+			opTrade.setError(new dest_Error(trade.getError().getErrordt(),trade.getError().getDescription()));
+			
+			Asset asset=cacheController.findAssetByCode(trade.getCashSecurity().getSecurityType());	
+			opTrade.setSecurityDescription(asset.getAssetTypeDesc());
+			
 			opTrade.setTradeId(trade.getTradeId());
 			opTrade.setTradeDate(trade.getTradeDate());
+			
 			opXml=covertToXml();
 		}
 		catch(Exception e) {
