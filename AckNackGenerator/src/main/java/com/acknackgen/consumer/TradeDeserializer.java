@@ -7,6 +7,7 @@ import org.apache.kafka.common.serialization.Deserializer;
 import com.acknackgen.model.trade.Trade;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+//Custom Deserializer to deserialize the data consumed from topic
 public class TradeDeserializer implements Deserializer<Trade> {
 	
 	    @Override
@@ -14,6 +15,7 @@ public class TradeDeserializer implements Deserializer<Trade> {
 	        ObjectMapper mapper = new ObjectMapper();
 	        Trade trade = null;
 	        try {
+	        	//mapping the byte stream to Trade class
 	            trade = mapper.readValue(devBytes, Trade.class);
 	        } catch (Exception e) {
 

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import com.acknackgen.controller.Controller;
 import com.acknackgen.model.trade.Trade;
 
-
+//Kafka Consumer Class
 @Component
 public class Consumer {
 	
@@ -15,8 +15,9 @@ public class Consumer {
 	Controller controller;
 	
 	@KafkaListener(topics = "56y1nhk1-exception-topic",concurrency="5")
-	public void consume(Trade trade) {
+	public void consume(Trade trade) throws InterruptedException {
 		
+		//Call to controller to convert the received trade object
 		controller.prodToTopic(trade);
 	}
 	

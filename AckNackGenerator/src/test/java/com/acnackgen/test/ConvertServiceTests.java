@@ -19,8 +19,7 @@ import com.acknackgen.model.trade.SourceError;
 import com.acknackgen.model.trade.Trade;
 import com.acknackgen.service.ConvertService;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = AckNackMicroservice.class)
+//Unit test for testing the conversion method
 class ConvertServiceTests {
 	
 	private static final String expected="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" + 
@@ -46,8 +45,10 @@ class ConvertServiceTests {
 	@Test
 	public void convertObjectTest() {
 		
+		//Using Mockito to mock the repository
 		when(cacheController.findFirmByCode("SLI")).thenReturn(new Firm("SLI","State Life Insurance"));
 		when(cacheController.findAssetByCode("EQ")).thenReturn(new Asset("EQ","Equities"));
+		
 		assertEquals(expected,convertService.convertObj(trade));
 	}
 

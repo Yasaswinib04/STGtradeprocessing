@@ -20,13 +20,12 @@ public class Producer {
 	private KafkaTemplate<String,String> template;
 	
 	//Method to produce to topic
-	public void sendMessage(String message) {
+	public void sendMessage(String message) throws InterruptedException {
 		
 		//Logging produced message
 		
 		logger.info("#### -> Producing message");
 		//Send message to topic
 		this.template.send(topic,message);
-		
 	}
 }

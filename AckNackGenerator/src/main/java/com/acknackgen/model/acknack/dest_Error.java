@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlElement;
 
 import org.springframework.stereotype.Component;
 
+//POJO class for the Error Object to be converted to XML
 @Component
 @XmlAccessorType(XmlAccessType.FIELD)
 public class dest_Error {

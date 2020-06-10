@@ -16,6 +16,7 @@ import com.acknackgen.model.acknack.dest_Error;
 import com.acknackgen.model.acknack.dest_Trade;
 import com.acknackgen.model.trade.Trade;
 
+//Class containing methods that handle conversion of Trade Object to XML
 @Service
 public class ConvertService {
 	
@@ -24,23 +25,27 @@ public class ConvertService {
 	
 	@Autowired
 	CacheController cacheController;
-	//Method for changing to Xml		
+	
+	//Method to create Trade object according the format of the required output XML 		
 	public String convertObj(Trade trade){
 		
 		String opXml=null;
 		try {
 			
+			//Call to method to get Firm Description from the Cache/Database
 			Firm firm=cacheController.findFirmByCode(trade.getFirm());
 			opTrade.setClientName(firm.getFirmDesc());
 			
 			opTrade.setError(new dest_Error(trade.getError().getErrordt(),trade.getError().getDescription()));
 			
+			//Call to method to get Asset Type Description from the Cache/Database
 			Asset asset=cacheController.findAssetByCode(trade.getCashSecurity().getSecurityType());	
 			opTrade.setSecurityDescription(asset.getAssetTypeDesc());
 			
 			opTrade.setTradeId(trade.getTradeId());
 			opTrade.setTradeDate(trade.getTradeDate());
 			
+			//Call to method that converts opTrade object to XML
 			opXml=covertToXml();
 		}
 		catch(Exception e) {
@@ -49,13 +54,16 @@ public class ConvertService {
 		return opXml;
 	}
 	
+	//Method that converts Trade object to XML
 	public String covertToXml() {
-		System.out.println("Trade herer");
+		
 		//Empty StringWriter object
 		StringWriter sw=new StringWriter();
 		String opXml="";
+		
 		//Marshalling to object to Xml in required format
 		try {
+			
 			JAXBContext jaxbcontext=JAXBContext.newInstance(dest_Trade.class);
 			Marshaller jaxbMarshaller=jaxbcontext.createMarshaller();
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -68,6 +76,7 @@ public class ConvertService {
 			e.printStackTrace();
 		}
 		
+		//Log XML to console
 		System.out.println(opXml);
 		return opXml;
 	}

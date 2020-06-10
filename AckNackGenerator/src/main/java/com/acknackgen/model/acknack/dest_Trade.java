@@ -6,6 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import org.springframework.stereotype.Component;
 
+//POJO class for the Trade Object to be converted to XML
 @Component
 @XmlRootElement(name="Trade")
 @XmlAccessorType(XmlAccessType.FIELD)

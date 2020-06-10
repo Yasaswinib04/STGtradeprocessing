@@ -1,5 +1,6 @@
 package com.acknackgen.model.trade;
 
+//Model of the trade consumed form kafka
 public class Trade {
 
 	private String tradeId;

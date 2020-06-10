@@ -6,6 +6,7 @@ import com.acknackgen.model.trade.Trade;
 import com.acknackgen.producer.Producer;
 import com.acknackgen.service.ConvertService;
 
+//Controller to call the convert method that handles conversion to XML 
 @Component
 public class Controller {
 	
@@ -16,7 +17,7 @@ public class Controller {
 	Producer producer;
 	
 	//Method to combine the production and conversion
-	public void prodToTopic(Trade trade) {	
+	public void prodToTopic(Trade trade) throws InterruptedException {	
 		producer.sendMessage(convertService.convertObj(trade));
 	}
 	
