@@ -20,6 +20,7 @@ public class dest_Trade {
 	@XmlElement(name="SecurityDescription")
 	private String securityDescription;
 	
+	@XmlElement(name="Error")
 	private dest_Error error;
 	
 	@XmlElement(name="TradeDate")

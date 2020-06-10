@@ -23,7 +23,8 @@ public class Producer {
 	public void sendMessage(String message) {
 		
 		//Logging produced message
-		logger.info(String.format("#### -> Producing message -> %s", message));
+		
+		logger.info("#### -> Producing message");
 		//Send message to topic
 		this.template.send(topic,message);
 		

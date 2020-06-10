@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>		
+<Firms>						
+      <Firm>	
+<FirmCode>SLI</FirmCode>
+<FirmDescription>State Life Insurance</FirmDescription>
+      </Firm>		
+      <Firm>	
+<FirmCode>FAC</FirmCode>
+<FirmDescription>Finance Analysis Company</FirmDescription>
+      </Firm>
+      <Firm>	
+<FirmCode>JDC</FirmCode>
+<FirmDescription>Johnson Data Company</FirmDescription>
+      </Firm>
+      <Firm>	
+<FirmCode>MLI</FirmCode>
+<FirmDescription>Markson Life Insurance</FirmDescription>
+      </Firm>		
+</Firms>		
+

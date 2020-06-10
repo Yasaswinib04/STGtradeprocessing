@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>		
+<Assets>						
+      <Asset>	
+            <AssetTypeCode>EQ</AssetTypeCode>
+            <AssetTypeDescription>Equities</AssetTypeDescription>
+      </Asset>		
+      <Asset>	
+       <AssetTypeCode>FD</AssetTypeCode>
+       <AssetTypeDescription>Fixed Deposit</AssetTypeDescription>
+      </Asset>
+      <Asset>	
+     <AssetTypeCode>CP</AssetTypeCode>
+    <AssetTypeDescription>Commercial Paper</AssetTypeDescription>
+      </Asset>
+		
+</Assets>		
