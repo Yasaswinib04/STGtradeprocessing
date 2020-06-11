@@ -9,6 +9,7 @@ import org.springframework.data.annotation.Id;
 
 import lombok.Data;
 
+//Firm POJO 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Firm {

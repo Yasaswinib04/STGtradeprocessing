@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import lombok.Data;
 
+//Class having list of assets
 @Data
 @XmlRootElement(name="Assets")
 @XmlAccessorType(XmlAccessType.FIELD)
