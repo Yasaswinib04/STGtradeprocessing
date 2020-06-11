@@ -20,8 +20,8 @@ import com.acknackgen.model.trade.Trade;
 import com.acknackgen.service.ConvertService;
 
 //Unit test for testing the conversion method
-@SpringBootTest()
-class ConvertServiceTests {
+@SpringBootTest
+class ConvertServiceTest {
 	
 	private static final String expected="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" + 
 			"<Trade>\n" + 
