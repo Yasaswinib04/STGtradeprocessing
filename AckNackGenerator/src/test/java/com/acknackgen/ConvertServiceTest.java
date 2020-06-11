@@ -23,6 +23,7 @@ import com.acknackgen.service.ConvertService;
 @SpringBootTest
 class ConvertServiceTest {
 	
+	//Expected output after Conversion
 	private static final String expected="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" + 
 			"<Trade>\n" + 
 			"    <ClientName>State Life Insurance</ClientName>\n" + 
@@ -50,6 +51,7 @@ class ConvertServiceTest {
 		when(cacheController.findFirmByCode("SLI")).thenReturn(new Firm("SLI","State Life Insurance"));
 		when(cacheController.findAssetByCode("EQ")).thenReturn(new Asset("EQ","Equities"));
 		
+		//Comparing real output with expected output
 		assertEquals(expected,convertService.convertObj(trade));
 	}
 
