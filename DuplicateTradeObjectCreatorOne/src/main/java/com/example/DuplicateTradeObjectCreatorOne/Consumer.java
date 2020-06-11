@@ -25,7 +25,7 @@ public class Consumer {
 	
 
 		
-		@KafkaListener(topics = "nbneddjx-GenericTradeObjectTopic",concurrency="5")
+		@KafkaListener(topics = "56y1nhk1-GenericTradeObject",concurrency="5")
 		public void consume(GenericTrade genericTrade) throws InterruptedException {
 					
 	       if ( ( (Instant.now().toEpochMilli()-start>10000) || (count>=10) ) && (count>0) ){

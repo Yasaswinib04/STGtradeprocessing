@@ -14,7 +14,7 @@ public class SenderToKafka{
 	private KafkaTemplate<String,Trade> kafkaTemplate;
 	
 	
-    private static final String topic="nbneddjx-ExceptionListTopic";
+    private static final String topic="56y1nhk1-exception-topic";
 	
     private static int count=1;
 	
