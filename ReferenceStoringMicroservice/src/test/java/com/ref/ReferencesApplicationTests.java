@@ -1,4 +1,4 @@
-package com.references;
+package com.ref;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
