@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.citi.stg</groupId>
-	<artifactId>Microservice1</artifactId>
+	<artifactId>IncomingTradesToKafka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Microservice1</name>
+	<name>IncomingTradesToKafka</name>
 	<description>Read XML files and mimic trades to kafka</description>
 
 	<properties>

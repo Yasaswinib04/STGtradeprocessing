@@ -8,11 +8,11 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.testconsumer</groupId>
-	<artifactId>consumer</artifactId>
+	<groupId>com.citi.stg</groupId>
+	<artifactId>KafkaToFileConnector</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>consumer</name>
-	<description>Demo project for Spring Boot</description>
+	<name>KafkaToFileConnector</name>
+	<description>Stores final Ack or Nack XML into file</description>
 
 	<properties>
 		<java.version>1.8</java.version>
