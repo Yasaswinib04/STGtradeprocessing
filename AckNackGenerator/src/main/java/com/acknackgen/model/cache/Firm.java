@@ -4,8 +4,7 @@ import java.io.Serializable;
 
 import org.springframework.data.annotation.Id;
 
-
-
+//Model for the Firm Object to be stored in cache
 public class Firm implements Serializable {
 	
 	@Id

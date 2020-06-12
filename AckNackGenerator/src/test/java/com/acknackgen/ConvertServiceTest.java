@@ -1,4 +1,4 @@
-package com.acnackgen.test;
+package com.acknackgen;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
@@ -19,10 +19,11 @@ import com.acknackgen.model.trade.SourceError;
 import com.acknackgen.model.trade.Trade;
 import com.acknackgen.service.ConvertService;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = AckNackMicroservice.class)
-class ConvertServiceTests {
+//Unit test for testing the conversion method
+@SpringBootTest
+class ConvertServiceTest {
 	
+	//Expected output after Conversion
 	private static final String expected="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" + 
 			"<Trade>\n" + 
 			"    <ClientName>State Life Insurance</ClientName>\n" + 
@@ -46,8 +47,11 @@ class ConvertServiceTests {
 	@Test
 	public void convertObjectTest() {
 		
+		//Using Mockito to mock the repository
 		when(cacheController.findFirmByCode("SLI")).thenReturn(new Firm("SLI","State Life Insurance"));
 		when(cacheController.findAssetByCode("EQ")).thenReturn(new Asset("EQ","Equities"));
+		
+		//Comparing real output with expected output
 		assertEquals(expected,convertService.convertObj(trade));
 	}
 

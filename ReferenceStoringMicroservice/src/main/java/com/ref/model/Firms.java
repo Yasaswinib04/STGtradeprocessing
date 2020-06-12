@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import lombok.Data;
 
+//Class having list of firms
 @Data
 @XmlRootElement(name="Firms")
 @XmlAccessorType(XmlAccessType.FIELD)

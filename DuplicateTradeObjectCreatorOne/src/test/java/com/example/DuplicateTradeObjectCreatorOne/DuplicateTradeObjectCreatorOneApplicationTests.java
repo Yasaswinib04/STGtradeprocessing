@@ -1,10 +1,10 @@
-package com.references;
+package com.example.DuplicateTradeObjectCreatorOne;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ReferencesApplicationTests {
+class DuplicateTradeObjectCreatorOneApplicationTests {
 
 	@Test
 	void contextLoads() {

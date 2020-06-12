@@ -10,8 +10,8 @@ import com.acknackgen.model.trade.Trade;
 import com.acknackgen.service.ConvertService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+//Class to test ConvertService using REST api
 @RestController
-
 public class TestController {
 	
 	@Autowired

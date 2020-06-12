@@ -4,6 +4,7 @@ package com.acknackgen.model.cache;
 import java.io.Serializable;
 import org.springframework.data.annotation.Id;
 
+//Model for the Asset Object to be stored in cache
 public class Asset implements Serializable {
 	
 	@Id

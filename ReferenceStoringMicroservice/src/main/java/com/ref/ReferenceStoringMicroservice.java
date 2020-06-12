@@ -37,17 +37,23 @@ public class ReferenceStoringMicroservice implements ApplicationRunner {
 		SpringApplication.run(ReferenceStoringMicroservice.class, args);
 	}
 	
+	//Code to run after application is executed
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-
-		File file=new File("src/main/resources/store/firms.xml");
+		
+		//load file containing list of firms into database
+		File firm_file=new File("src/main/resources/store/firms.xml");
 		
 		try {
+			//Using JAXB to generate firms object containing list of firms
 			JAXBContext jaxbContext=JAXBContext.newInstance(Firms.class);
 			Unmarshaller jaxbUnmarshaller=jaxbContext.createUnmarshaller();
-			Firms firms=(Firms) jaxbUnmarshaller.unmarshal(file);
+			Firms firms=(Firms) jaxbUnmarshaller.unmarshal(firm_file);
+			
+			//Call to saveAll method of repository to add firms to database
 			firmRepository.saveAll(firms.getFirms());
 			
+			//Method call to clear cache
 			System.out.println("method called to clear firm cache");
 			cacheService.clearCache();
 		} 
@@ -55,14 +61,19 @@ public class ReferenceStoringMicroservice implements ApplicationRunner {
 			e.printStackTrace();
 		} 
 		
-		File file1=new File("src/main/resources/store/assets.xml");
+		//load file containing list of assets into database
+		File asset_file=new File("src/main/resources/store/assets.xml");
 		
 		try {
+			//Using JAXB to generate assets object containing list of assets
 			JAXBContext jaxbContext=JAXBContext.newInstance(Assets.class);
 			Unmarshaller jaxbUnmarshaller=jaxbContext.createUnmarshaller();
-			Assets assets=(Assets) jaxbUnmarshaller.unmarshal(file1);
+			Assets assets=(Assets) jaxbUnmarshaller.unmarshal(asset_file);
+			
+			//Call to saveAll method of repository to add assets to database
 			assetRepository.saveAll(assets.getAssets());
 			
+			//Method call to clear cache
 			System.out.println("method called to clear asset cache");
 			cacheService.clearCache();	
 		} 
