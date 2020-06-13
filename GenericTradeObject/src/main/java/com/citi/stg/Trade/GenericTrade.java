@@ -1,4 +1,4 @@
-package com.citi.stg;
+package com.citi.stg.Trade;
 
 public class GenericTrade {
 
@@ -6,8 +6,9 @@ public class GenericTrade {
 	private String firm;
 	private GenericSecurity genericSecurity;
 	private String date;
-	
-	public GenericTrade() {}
+
+	public GenericTrade() {
+	}
 
 	public GenericTrade(String tradeId, String firm, GenericSecurity genericSecurity, String date) {
 		super();
@@ -48,6 +49,5 @@ public class GenericTrade {
 	public void setDate(String date) {
 		this.date = date;
 	}
-	
-	
+
 }

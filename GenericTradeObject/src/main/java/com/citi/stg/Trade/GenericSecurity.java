@@ -1,12 +1,12 @@
-package com.citi.stg;
+package com.citi.stg.Trade;
 
 public class GenericSecurity {
 
 	private String securityType;
 	private String securityIdentifier;
-	
+
 	public GenericSecurity() {
-		
+
 	}
 
 	public GenericSecurity(String securityType, String securityIdentifier) {
