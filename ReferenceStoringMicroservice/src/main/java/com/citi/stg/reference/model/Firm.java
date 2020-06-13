@@ -1,4 +1,4 @@
-package com.ref.model;
+package com.citi.stg.reference.model;
 
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;

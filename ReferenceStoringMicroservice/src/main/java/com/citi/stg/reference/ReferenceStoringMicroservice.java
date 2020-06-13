@@ -1,4 +1,4 @@
-package com.ref;
+package com.citi.stg.reference;
 
 import java.io.File;
 
@@ -14,11 +14,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
-import com.ref.model.Assets;
-import com.ref.model.Firms;
-import com.ref.repository.AssetRepository;
-import com.ref.repository.FirmRepository;
-import com.ref.service.CacheService;
+import com.citi.stg.reference.model.Assets;
+import com.citi.stg.reference.model.Firms;
+import com.citi.stg.reference.repository.AssetRepository;
+import com.citi.stg.reference.repository.FirmRepository;
+import com.citi.stg.reference.service.CacheService;
 
 @SpringBootApplication
 @EnableCaching

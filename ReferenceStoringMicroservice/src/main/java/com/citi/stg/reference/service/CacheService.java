@@ -1,4 +1,4 @@
-package com.ref.service;
+package com.citi.stg.reference.service;
 
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
