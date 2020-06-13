@@ -11,8 +11,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>KnackGenerator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>KnackGenerator</name>
-	<description>Knack Generator from Exception Trade</description>
+	<name>AckNackGenerator</name>
+	<description>Ack Nack Generator from received Trade</description>
 
 	<properties>
 		<java.version>1.8</java.version>
