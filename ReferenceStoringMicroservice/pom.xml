@@ -11,8 +11,8 @@
 	<groupId>com</groupId>
 	<artifactId>references</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>references</name>
-	<description>storing references in mongodb </description>
+	<name>ReferenceStoringMicroservice</name>
+	<description>Microservice to save the references(firms and assets) in mongodb </description>
 
 	<properties>
 		<java.version>1.8</java.version>
