@@ -1,4 +1,5 @@
 package com.citi.stg.acknackgen.model.acknack;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -8,28 +9,30 @@ import org.springframework.stereotype.Component;
 
 //POJO class for the Trade Object to be converted to XML
 @Component
-@XmlRootElement(name="Trade")
+@XmlRootElement(name = "Trade")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class dest_Trade {
-	
-	@XmlElement(name="ClientName")
+
+	@XmlElement(name = "ClientName")
 	private String clientName;
-	
-	@XmlElement(name="TradeId")
+
+	@XmlElement(name = "TradeId")
 	private String tradeId;
-	
-	@XmlElement(name="SecurityDescription")
+
+	@XmlElement(name = "SecurityDescription")
 	private String securityDescription;
-	
-	@XmlElement(name="Error")
+
+	@XmlElement(name = "Error")
 	private dest_Error error;
-	
-	@XmlElement(name="TradeDate")
+
+	@XmlElement(name = "TradeDate")
 	private String tradeDate;
 
-	dest_Trade(){}
-	
-	public dest_Trade(String clientName, String tradeId, String securityDescription, dest_Error error, String tradeDate) {
+	dest_Trade() {
+	}
+
+	public dest_Trade(String clientName, String tradeId, String securityDescription, dest_Error error,
+			String tradeDate) {
 		super();
 		this.clientName = clientName;
 		this.tradeId = tradeId;
@@ -37,7 +40,7 @@ public class dest_Trade {
 		this.error = error;
 		this.tradeDate = tradeDate;
 	}
-	
+
 	public String getClientName() {
 		return clientName;
 	}
@@ -77,5 +80,11 @@ public class dest_Trade {
 	public void setTradeDate(String tradeDate) {
 		this.tradeDate = tradeDate;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "dest_Trade [clientName=" + clientName + ", tradeId=" + tradeId + ", securityDescription="
+				+ securityDescription + ", error=" + error + ", tradeDate=" + tradeDate + "]";
+	}
+
 }

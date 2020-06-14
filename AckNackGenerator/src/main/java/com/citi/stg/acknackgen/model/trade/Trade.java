@@ -6,15 +6,16 @@ public class Trade {
 	private String tradeId;
 
 	private String firm;
-	
+
 	private SourceError error;
-	
+
 	private CashSecurity cashSecurity;
-	
+
 	private String tradeDate;
 
-	Trade() {}
-	
+	Trade() {
+	}
+
 	public Trade(String tradeId, String firm, SourceError error, CashSecurity cashSecurity, String tradeDate) {
 		super();
 		this.tradeId = tradeId;
@@ -63,5 +64,11 @@ public class Trade {
 	public void setTradeDate(String tradeDate) {
 		this.tradeDate = tradeDate;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Trade [tradeId=" + tradeId + ", firm=" + firm + ", error=" + error + ", cashSecurity=" + cashSecurity
+				+ ", tradeDate=" + tradeDate + "]";
+	}
+
 }

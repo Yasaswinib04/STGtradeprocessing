@@ -6,13 +6,14 @@ import org.springframework.data.annotation.Id;
 
 //Model for the Firm Object to be stored in cache
 public class Firm implements Serializable {
-	
+
 	@Id
 	public String firmCode;
 	public String firmDesc;
-	
-	Firm(){}
-	
+
+	Firm() {
+	}
+
 	public Firm(String firmCode, String firmDesc) {
 		super();
 		this.firmCode = firmCode;
@@ -34,5 +35,10 @@ public class Firm implements Serializable {
 	public void setFirmDesc(String firmDesc) {
 		this.firmDesc = firmDesc;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Firm [firmCode=" + firmCode + ", firmDesc=" + firmDesc + "]";
+	}
+
 }
