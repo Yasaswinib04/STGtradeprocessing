@@ -1,4 +1,4 @@
-package com.citi.stg.acknackgen.consumer;
+package com.citi.stg.acknackgen.kafka.consumer;
 
 import java.util.Map;
 
