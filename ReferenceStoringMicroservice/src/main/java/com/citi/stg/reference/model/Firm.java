@@ -1,9 +1,8 @@
 package com.citi.stg.reference.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlAccessType;
-
 
 import org.springframework.data.annotation.Id;
 
@@ -13,12 +12,17 @@ import lombok.Data;
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Firm {
-	
+
 	@Id
-	@XmlElement(name="FirmCode")
+	@XmlElement(name = "FirmCode")
 	public String firmCode;
-	
-	@XmlElement(name="FirmDescription")
+
+	@XmlElement(name = "FirmDescription")
 	public String firmDesc;
+
+	@Override
+	public String toString() {
+		return "Firm [firmCode=" + firmCode + ", firmDesc=" + firmDesc + "]";
+	}
 
 }
