@@ -1,18 +1,19 @@
 package com.citi.stg.acknackgen.model.cache;
 
-
 import java.io.Serializable;
+
 import org.springframework.data.annotation.Id;
 
 //Model for the Asset Object to be stored in cache
 public class Asset implements Serializable {
-	
+
 	@Id
 	public String assetTypeCode;
 	public String assetTypeDesc;
 
-	Asset(){}
-	
+	Asset() {
+	}
+
 	public Asset(String assetTypeCode, String assetTypeDesc) {
 		super();
 		this.assetTypeCode = assetTypeCode;
@@ -34,5 +35,10 @@ public class Asset implements Serializable {
 	public void setAssetTypeDesc(String assetTypeDesc) {
 		this.assetTypeDesc = assetTypeDesc;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Asset [assetTypeCode=" + assetTypeCode + ", assetTypeDesc=" + assetTypeDesc + "]";
+	}
+
 }

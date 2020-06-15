@@ -1,13 +1,14 @@
 package com.citi.stg.acknackgen.model.trade;
 
 public class CashSecurity {
-	
+
 	private String securityType;
-	
+
 	private String securityIdentifier;
 
-	CashSecurity() {}
-	
+	CashSecurity() {
+	}
+
 	public CashSecurity(String securityType, String securityIdentifier) {
 		super();
 		this.securityType = securityType;
@@ -29,5 +30,10 @@ public class CashSecurity {
 	public void setSecurityIdentifier(String securityIdentifier) {
 		this.securityIdentifier = securityIdentifier;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "CashSecurity [securityType=" + securityType + ", securityIdentifier=" + securityIdentifier + "]";
+	}
+
 }

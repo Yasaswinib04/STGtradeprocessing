@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class CacheService {
 	
 	//Method to clear cache
-	@CacheEvict (value = { "firm","asset"}, allEntries=true)
+	@CacheEvict (value = {"firm","asset"}, allEntries=true)
 	public void clearCache() {
 		//Log status to console
 		System.out.println("Cache Cleared");
