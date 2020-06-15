@@ -8,7 +8,7 @@ import org.springframework.kafka.core.KafkaTemplate;
  * Kafka Producer to produce a String message to Kafka Topic using KafkaTemplate class.
  */
 public class Producer {
-    Logger logger= LoggerFactory.getLogger(Producer.class);
+    private static final Logger logger = LoggerFactory.getLogger(Producer.class);
     private KafkaTemplate<String, String> kafkaTemplate;
     private String msg;
     private String topic;
@@ -22,7 +22,7 @@ public class Producer {
 
     //Method to send message "msg" to Kafka Topic "topic"
     public void sendMessage() {
-        logger.info("Producing to topic...");
         kafkaTemplate.send(topic, msg);
+        logger.info("Produced to topic");
     }
 }

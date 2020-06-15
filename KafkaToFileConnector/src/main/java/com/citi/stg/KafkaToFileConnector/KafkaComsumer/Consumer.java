@@ -13,13 +13,11 @@ import org.springframework.stereotype.Component;
 @Component
 class Consumer {
     private int i = 1;
-    Logger logger = LoggerFactory.getLogger(Consumer.class);
 
     @KafkaListener(topics = "${topic.kafka}")
     public void processMessage(String message) {
-        logger.info("Consuming message...");
+
         new stringToFile(message, i++).start();
-        logger.info("Writing to file...");
 
     }
 }

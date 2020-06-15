@@ -1,6 +1,8 @@
 package com.citi.stg.IncomingTradesToKafka.ConverterService;
 
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 
@@ -16,6 +18,7 @@ import java.io.StringWriter;
 //Main Service
 @Service
 public class Converter {
+    private static final Logger logger = LoggerFactory.getLogger(Converter.class);
 
     /*
      * Method to convert XML File at path "path" into a Document object using the DocumentBuilder class,
@@ -31,16 +34,14 @@ public class Converter {
      */
     public String convertXmlfiletoString(String path) {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = null;
-        try {
-            builder = factory.newDocumentBuilder();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        DocumentBuilder builder;
         Document xmlDocument = null;
         try {
+            logger.info("Parsing XML file into Document");
+            builder = factory.newDocumentBuilder();
             xmlDocument = builder.parse(new File(path));
         } catch (Exception e) {
+            logger.error("Parsing to Document failed");
             e.printStackTrace();
         }
         return (ToString(xmlDocument));
@@ -64,6 +65,7 @@ public class Converter {
         TransformerFactory tf = TransformerFactory.newInstance();
         Transformer transformer;
         try {
+            logger.info("Transforming Document to String");
             transformer = tf.newTransformer();
             StringWriter writer = new StringWriter();
             transformer.transform(new DOMSource(xmlDocument), new StreamResult(writer));
@@ -72,6 +74,7 @@ public class Converter {
             xmlString = StringUtils.substringBetween(xmlString, "<Trades>", "</Trades>").trim();
             return xmlString;
         } catch (Exception e) {
+            logger.error("Transformation to String failed");
             e.printStackTrace();
         }
         return null;
