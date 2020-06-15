@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>KnackGenerator</artifactId>
+	<artifactId>AckKnackGenerator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AckNackGenerator</name>
 	<description>Microservice to Generate Ack/Nack from received Trade Object</description>

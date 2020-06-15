@@ -23,9 +23,8 @@ public class Producer {
 	// Method to produce to topic
 	public void sendMessage(String message) throws InterruptedException {
 
-		// Logging produced message
-
-		logger.info("#### -> Producing message");
+		logger.info("#### -> Producing message to topic ack-nack topic");
+		
 		// Send message to topic
 		this.template.send(topic, message);
 	}

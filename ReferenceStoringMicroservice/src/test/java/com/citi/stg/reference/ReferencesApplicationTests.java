@@ -1,3 +1,4 @@
+
 package com.citi.stg.reference;
 
 import org.junit.jupiter.api.Test;
@@ -7,7 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ReferencesApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void UnmarshallingTest() {
+		
 	}
 
 }
