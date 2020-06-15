@@ -28,7 +28,7 @@ public class CacheController {
 	@Cacheable(value = "firm", key = "#firmCode")
 	public Firm findFirmByCode(String firmCode) {
 		
-		logger.info("Getting Firm from Cache");
+		logger.info("Getting Firm from Database");
 		
 		// Call to method that searches for the firm in the Database using firmCode
 		Firm firm = firmRepository.findByFirmCode(firmCode);
@@ -40,7 +40,7 @@ public class CacheController {
 	@Cacheable(value = "asset", key = "#assetTypeCode")
 	public Asset findAssetByCode(String assetTypeCode) {
 		
-		logger.info("Getting Asset from Cache");
+		logger.info("Getting Asset from Database");
 		
 		// Call to method that searches for the asset in the Database using
 		// assetTypeCode
