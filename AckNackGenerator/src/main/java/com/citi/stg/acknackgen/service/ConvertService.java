@@ -6,6 +6,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +22,8 @@ import com.citi.stg.acknackgen.model.trade.Trade;
 @Service
 public class ConvertService {
 
+	private static final Logger logger = LoggerFactory.getLogger(ConvertService.class);
+
 	@Autowired
 	dest_Trade opTrade;
 
@@ -31,7 +35,9 @@ public class ConvertService {
 
 		String opXml = null;
 		try {
-
+			
+			logger.info("Setting the Fields of dest_Trade Object");
+			
 			// Call to method to get Firm Description from the Cache/Database
 			Firm firm = cacheController.findFirmByCode(trade.getFirm());
 			opTrade.setClientName(firm.getFirmDesc());
@@ -62,7 +68,9 @@ public class ConvertService {
 
 		// Marshalling to object to Xml in required format
 		try {
-
+			
+			logger.info("Marshalling Ack/Nack to XML");
+			
 			JAXBContext jaxbcontext = JAXBContext.newInstance(dest_Trade.class);
 			Marshaller jaxbMarshaller = jaxbcontext.createMarshaller();
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -76,6 +84,9 @@ public class ConvertService {
 		}
 
 		// Log XML to console
+		logger.info("Generated Ack/Nack");
+		logger.info(opXml);
+		
 		System.out.println(opXml);
 		return opXml;
 	}

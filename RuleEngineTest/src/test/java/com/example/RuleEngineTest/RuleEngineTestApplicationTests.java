@@ -1,15 +1,13 @@
-
-package com.citi.stg.reference;
+package com.example.RuleEngineTest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ReferencesApplicationTests {
+class RuleEngineTestApplicationTests {
 
 	@Test
-	void UnmarshallingTest() {
-		
+	void contextLoads() {
 	}
 
 }
