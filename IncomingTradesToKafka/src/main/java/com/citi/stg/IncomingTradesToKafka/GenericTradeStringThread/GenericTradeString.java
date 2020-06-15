@@ -13,7 +13,6 @@ import org.springframework.kafka.core.KafkaTemplate;
  */
 public class GenericTradeString extends Thread {
     private KafkaTemplate<String, String> kafkaTemplate;
-
     private String topic;
     private final String path;
 
