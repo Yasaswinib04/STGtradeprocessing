@@ -35,9 +35,9 @@ public class ConvertService {
 
 		String opXml = null;
 		try {
-			
+
 			logger.info("Setting the Fields of dest_Trade Object");
-			
+
 			// Call to method to get Firm Description from the Cache/Database
 			Firm firm = cacheController.findFirmByCode(trade.getFirm());
 			opTrade.setClientName(firm.getFirmDesc());
@@ -54,6 +54,7 @@ public class ConvertService {
 			// Call to method that converts opTrade object to XML
 			opXml = covertToXml();
 		} catch (Exception e) {
+			logger.error("Exception occured in method convertObject Failed to generate trade object for ack/nack :",e);
 			e.printStackTrace();
 		}
 		return opXml;
@@ -68,9 +69,9 @@ public class ConvertService {
 
 		// Marshalling to object to Xml in required format
 		try {
-			
+
 			logger.info("Marshalling Ack/Nack to XML");
-			
+
 			JAXBContext jaxbcontext = JAXBContext.newInstance(dest_Trade.class);
 			Marshaller jaxbMarshaller = jaxbcontext.createMarshaller();
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -80,13 +81,14 @@ public class ConvertService {
 			opXml = sw.toString();
 
 		} catch (JAXBException e) {
+			logger.error("JAXB Exception encountered in covertToXml method Failed to generate XML from trade :", e);
 			e.printStackTrace();
 		}
 
 		// Log XML to console
-		logger.info("Generated Ack/Nack");
+		logger.info("Generated Ack/Nack :");
 		logger.info(opXml);
-		
+
 		System.out.println(opXml);
 		return opXml;
 	}

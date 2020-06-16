@@ -6,10 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 
 import org.springframework.data.annotation.Id;
 
-import lombok.Data;
-
 //Asset POJO
-@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Asset {
 
@@ -19,6 +16,15 @@ public class Asset {
 
 	@XmlElement(name = "AssetTypeDescription")
 	public String assetTypeDesc;
+
+	public Asset() {
+	}
+
+	public Asset(String assetTypeCode, String assetTypeDesc) {
+		super();
+		this.assetTypeCode = assetTypeCode;
+		this.assetTypeDesc = assetTypeDesc;
+	}
 
 	@Override
 	public String toString() {

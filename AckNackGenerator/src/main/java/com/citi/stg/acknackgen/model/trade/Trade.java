@@ -1,6 +1,6 @@
 package com.citi.stg.acknackgen.model.trade;
 
-//Model of the trade consumed form kafka
+//Model of the trade object consumed form kafka
 public class Trade {
 
 	private String tradeId;

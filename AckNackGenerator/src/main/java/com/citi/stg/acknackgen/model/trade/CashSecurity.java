@@ -1,5 +1,6 @@
 package com.citi.stg.acknackgen.model.trade;
 
+//Model of CashSecurity class present in trade
 public class CashSecurity {
 
 	private String securityType;

@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -20,6 +22,8 @@ import com.citi.stg.acknackgen.service.ConvertService;
 @SpringBootTest
 class ConvertServiceTest {
 
+	private static final Logger logger = LoggerFactory.getLogger(ConvertServiceTest.class);
+	
 	// Expected output after Conversion
 	private static final String expected = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n"
 			+ "<Trade>\n" + "    <ClientName>State Life Insurance</ClientName>\n" + "    <TradeId>HNC2347</TradeId>\n"
@@ -38,6 +42,7 @@ class ConvertServiceTest {
 
 	@Test
 	public void convertObjectTest() {
+		logger.info("Executing convertObjectTest Junit test");
 
 		// Using Mockito to mock the repository
 		when(cacheController.findFirmByCode("SLI")).thenReturn(new Firm("SLI", "State Life Insurance"));

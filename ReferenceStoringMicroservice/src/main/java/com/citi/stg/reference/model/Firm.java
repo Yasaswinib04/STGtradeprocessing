@@ -6,10 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 
 import org.springframework.data.annotation.Id;
 
-import lombok.Data;
-
 //Firm POJO 
-@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Firm {
 
@@ -19,6 +16,15 @@ public class Firm {
 
 	@XmlElement(name = "FirmDescription")
 	public String firmDesc;
+
+	public Firm() {
+	}
+
+	public Firm(String firmCode, String firmDesc) {
+		super();
+		this.firmCode = firmCode;
+		this.firmDesc = firmDesc;
+	}
 
 	@Override
 	public String toString() {
