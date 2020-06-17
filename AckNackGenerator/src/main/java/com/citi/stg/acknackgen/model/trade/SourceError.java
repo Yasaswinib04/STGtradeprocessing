@@ -1,5 +1,6 @@
 package com.citi.stg.acknackgen.model.trade;
 
+//Model of SourceError class present in trade
 public class SourceError {
 
 	private String errordt;

@@ -1,5 +1,9 @@
 package com.citi.stg.Trade;
 
+/*
+ *   GenericSecurity Object
+ */
+
 public class GenericSecurity {
 
 	private String securityType;

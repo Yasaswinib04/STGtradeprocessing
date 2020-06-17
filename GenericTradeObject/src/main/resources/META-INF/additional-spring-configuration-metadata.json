@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "topic.consumer.kafka",
+    "type": "java.lang.String",
+    "description": "A description for 'topic.consumer.kafka'"
+  },
+  {
+    "name": "topic.producer.kafka",
+    "type": "java.lang.String",
+    "description": "A description for 'topic.producer.kafka'"
+  }
+]}

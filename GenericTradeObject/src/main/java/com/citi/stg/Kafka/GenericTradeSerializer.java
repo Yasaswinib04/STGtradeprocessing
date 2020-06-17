@@ -8,6 +8,11 @@ import com.citi.stg.Trade.GenericTrade;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class GenericTradeSerializer implements Serializer<GenericTrade> {
+	
+	
+	/*
+	 *  Trade serializer to produce the Java object to kafka topic
+	 */
 
 	@Override
 	public byte[] serialize(String arg0, GenericTrade generictrade) {

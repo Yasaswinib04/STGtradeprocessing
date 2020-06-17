@@ -1,5 +1,9 @@
 package com.citi.stg.Trade;
 
+/*
+ *  GenericTrade Object which has to be sent to kafka topic
+ */
+
 public class GenericTrade {
 
 	private String tradeId;

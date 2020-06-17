@@ -7,16 +7,21 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import lombok.Data;
-
 //Class having list of firms
-@Data
 @XmlRootElement(name = "Firms")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Firms {
 
 	@XmlElement(name = "Firm")
 	private ArrayList<Firm> firms;
+
+	public Firms() {
+	}
+
+	public Firms(ArrayList<Firm> firms) {
+		super();
+		this.firms = firms;
+	}
 
 	public ArrayList<Firm> getFirms() {
 		return firms;

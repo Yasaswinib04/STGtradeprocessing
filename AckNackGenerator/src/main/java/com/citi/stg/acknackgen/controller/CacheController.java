@@ -23,25 +23,29 @@ public class CacheController {
 	@Autowired
 	AssetRepository assetRepository;
 
-	// Annotation to store the returned Firm object into cache named firm with the
-	// respective firmCode field as key
+	/*
+	 * Annotation to store the returned Firm object into cache named firm with the
+	 * respective firmCode field as key
+	 */ 
 	@Cacheable(value = "firm", key = "#firmCode")
 	public Firm findFirmByCode(String firmCode) {
-		
+
 		logger.info("Getting Firm from Database");
-		
+
 		// Call to method that searches for the firm in the Database using firmCode
 		Firm firm = firmRepository.findByFirmCode(firmCode);
 		return firm;
 	}
 
-	// Annotation to store the returned Asset object into cache named asset with the
-	// respective assetTypeCode field as key
+	/*
+	 * Annotation to store the returned Asset object into cache named asset with the
+	 * respective assetTypeCode field as key
+	 */
 	@Cacheable(value = "asset", key = "#assetTypeCode")
 	public Asset findAssetByCode(String assetTypeCode) {
-		
+
 		logger.info("Getting Asset from Database");
-		
+
 		// Call to method that searches for the asset in the Database using
 		// assetTypeCode
 		Asset asset = assetRepository.findByAssetTypeCode(assetTypeCode);

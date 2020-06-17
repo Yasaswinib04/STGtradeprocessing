@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>		
+<Firms>						
+      <Firm>	
+<FirmCode>SLI</FirmCode>
+<FirmDescription>State Life Insurance</FirmDescription>
+      </Firm>		
+      <Firm>	
+<FirmCode>JDC</FirmCode>
+<FirmDescription>Johnson Data Company</FirmDescription>
+      </Firm>
+</Firms>		
+

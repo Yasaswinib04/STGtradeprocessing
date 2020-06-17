@@ -1,0 +1,559 @@
+2020-06-17 15:04:54.534  INFO 12644 --- [main] c.c.stg.GenericTradeObjectApplication    : No active profile set, falling back to default profiles: default
+2020-06-17 15:04:55.120  INFO 12644 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=445a71b9-abe2-32f9-b579-f0f1d6c0d908
+2020-06-17 15:04:55.156  INFO 12644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$141227aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 15:04:55.351  INFO 12644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-17 15:04:55.362  INFO 12644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-17 15:04:55.363  INFO 12644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-17 15:04:55.474  INFO 12644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-17 15:04:55.475  INFO 12644 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 914 ms
+2020-06-17 15:04:55.668  INFO 12644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-17 15:04:56.561  INFO 12644 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-GenericTradeTopic
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-06-17 15:04:57.952  INFO 12644 --- [main] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2020-06-17 15:04:58.829  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 15:04:58.830  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 15:04:58.830  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592386498827
+2020-06-17 15:04:58.846  INFO 12644 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Subscribed to topic(s): 56y1nhk1-GenericTradeTopic
+2020-06-17 15:04:58.848  INFO 12644 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 15:04:58.851  INFO 12644 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-GenericTradeTopic
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-06-17 15:04:58.859  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 15:04:58.859  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 15:04:58.859  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592386498859
+2020-06-17 15:04:58.859  INFO 12644 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Subscribed to topic(s): 56y1nhk1-GenericTradeTopic
+2020-06-17 15:04:58.860  INFO 12644 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 15:04:58.861  INFO 12644 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-GenericTradeTopic
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-06-17 15:04:58.868  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 15:04:58.868  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 15:04:58.869  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592386498868
+2020-06-17 15:04:58.869  INFO 12644 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Subscribed to topic(s): 56y1nhk1-GenericTradeTopic
+2020-06-17 15:04:58.869  INFO 12644 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 15:04:58.871  INFO 12644 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-GenericTradeTopic
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-06-17 15:04:58.876  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 15:04:58.876  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 15:04:58.876  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592386498876
+2020-06-17 15:04:58.877  INFO 12644 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Subscribed to topic(s): 56y1nhk1-GenericTradeTopic
+2020-06-17 15:04:58.877  INFO 12644 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 15:04:58.878  INFO 12644 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-GenericTradeTopic
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-06-17 15:04:58.884  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 15:04:58.884  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 15:04:58.884  INFO 12644 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592386498884
+2020-06-17 15:04:58.885  INFO 12644 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Subscribed to topic(s): 56y1nhk1-GenericTradeTopic
+2020-06-17 15:04:58.885  INFO 12644 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 15:04:58.900  INFO 12644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-17 15:04:58.911  INFO 12644 --- [main] c.c.stg.GenericTradeObjectApplication    : Started GenericTradeObjectApplication in 7.595 seconds (JVM running for 8.644)
+2020-06-17 15:05:02.738  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 15:05:02.738  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 15:05:02.740  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Discovered group coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null)
+2020-06-17 15:05:02.740  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Discovered group coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null)
+2020-06-17 15:05:02.744  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 15:05:02.747  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:02.747  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:02.755  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 15:05:02.757  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Discovered group coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null)
+2020-06-17 15:05:02.758  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:02.772  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Discovered group coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null)
+2020-06-17 15:05:02.774  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:02.789  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 15:05:02.807  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Discovered group coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null)
+2020-06-17 15:05:02.808  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:06.151  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 15:05:06.166  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:06.430  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 15:05:06.431  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 15:05:06.433  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:06.432  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:06.430  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 15:05:06.455  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:06.468  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 15:05:06.473  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] (Re-)joining group
+2020-06-17 15:05:09.680  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Finished assignment for group at generation 17: {consumer-56y1nhk1-GenericTradeTopic-3-24b0450a-e33c-4776-a091-78332a52a1db=Assignment(partitions=[56y1nhk1-GenericTradeTopic-2]), consumer-56y1nhk1-GenericTradeTopic-1-d62430fb-8696-4197-b7d2-3faf2ad8bb16=Assignment(partitions=[56y1nhk1-GenericTradeTopic-0]), consumer-56y1nhk1-GenericTradeTopic-2-60da648b-cbdd-4bbc-9fe0-629ece533f8b=Assignment(partitions=[56y1nhk1-GenericTradeTopic-1]), consumer-56y1nhk1-GenericTradeTopic-5-91ea5cc2-8169-412a-b354-c47dcfca1a26=Assignment(partitions=[56y1nhk1-GenericTradeTopic-4]), consumer-56y1nhk1-GenericTradeTopic-4-d0bd9f93-19e1-4475-94fe-4ba41b9d2d97=Assignment(partitions=[56y1nhk1-GenericTradeTopic-3])}
+2020-06-17 15:05:10.594  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Successfully joined group with generation 17
+2020-06-17 15:05:10.594  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Successfully joined group with generation 17
+2020-06-17 15:05:10.594  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Successfully joined group with generation 17
+2020-06-17 15:05:10.594  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Successfully joined group with generation 17
+2020-06-17 15:05:10.594  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Successfully joined group with generation 17
+2020-06-17 15:05:10.735  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Adding newly assigned partitions: 56y1nhk1-GenericTradeTopic-2
+2020-06-17 15:05:10.735  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Adding newly assigned partitions: 56y1nhk1-GenericTradeTopic-3
+2020-06-17 15:05:10.735  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Adding newly assigned partitions: 56y1nhk1-GenericTradeTopic-0
+2020-06-17 15:05:10.735  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Adding newly assigned partitions: 56y1nhk1-GenericTradeTopic-1
+2020-06-17 15:05:10.735  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Adding newly assigned partitions: 56y1nhk1-GenericTradeTopic-4
+2020-06-17 15:05:11.235  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Setting offset for partition 56y1nhk1-GenericTradeTopic-3 to the committed offset FetchPosition{offset=164, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 15:05:11.235  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Setting offset for partition 56y1nhk1-GenericTradeTopic-1 to the committed offset FetchPosition{offset=124, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-02.srvs.cloudkafka.com:9094 (id: 1 rack: null)], epoch=absent}}
+2020-06-17 15:05:11.235  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Setting offset for partition 56y1nhk1-GenericTradeTopic-0 to the committed offset FetchPosition{offset=114, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 15:05:11.235  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Setting offset for partition 56y1nhk1-GenericTradeTopic-2 to the committed offset FetchPosition{offset=173, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-03.srvs.cloudkafka.com:9094 (id: 2 rack: null)], epoch=absent}}
+2020-06-17 15:05:11.237  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Setting offset for partition 56y1nhk1-GenericTradeTopic-4 to the committed offset FetchPosition{offset=108, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-02.srvs.cloudkafka.com:9094 (id: 1 rack: null)], epoch=absent}}
+2020-06-17 15:05:11.276  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions assigned: [56y1nhk1-GenericTradeTopic-2]
+2020-06-17 15:05:11.276  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions assigned: [56y1nhk1-GenericTradeTopic-0]
+2020-06-17 15:05:11.276  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions assigned: [56y1nhk1-GenericTradeTopic-1]
+2020-06-17 15:05:11.276  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions assigned: [56y1nhk1-GenericTradeTopic-4]
+2020-06-17 15:05:11.276  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions assigned: [56y1nhk1-GenericTradeTopic-3]
+2020-06-17 15:05:14.497  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Fetch offset 173 is out of range for partition 56y1nhk1-GenericTradeTopic-2, resetting offset
+2020-06-17 15:05:14.627  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Kafka.Consumer              : #### -> Consuming Trade from GenericTradeTopic
+2020-06-17 15:05:14.640  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Controller.Controller       : Controller called
+2020-06-17 15:05:14.640  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] c.citi.stg.Controller.ControllerService  : Setting the feilds of GenericTrade Object
+2020-06-17 15:05:14.656  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Kafka.Producer              : #### -> Producing message -> com.citi.stg.Trade.GenericTrade@2601936c
+2020-06-17 15:05:14.686  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class com.citi.stg.Kafka.GenericTradeSerializer
+
+2020-06-17 15:05:14.703  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 15:05:14.704  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 15:05:14.704  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592386514702
+2020-06-17 15:05:14.784  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Resetting offset for partition 56y1nhk1-GenericTradeTopic-2 to offset 183.
+2020-06-17 15:05:17.626  INFO 12644 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 15:05:17.699  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Kafka.Producer              : Successfully produced to GenericTradeObject
+2020-06-17 15:05:33.798  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Kafka.Consumer              : #### -> Consuming Trade from GenericTradeTopic
+2020-06-17 15:05:33.799  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Controller.Controller       : Controller called
+2020-06-17 15:05:33.799  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] c.citi.stg.Controller.ControllerService  : Setting the feilds of GenericTrade Object
+2020-06-17 15:05:33.800  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Kafka.Producer              : #### -> Producing message -> com.citi.stg.Trade.GenericTrade@4d493eea
+2020-06-17 15:05:33.802  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] com.citi.stg.Kafka.Producer              : Successfully produced to GenericTradeObject
+2020-06-17 15:05:47.530  INFO 12644 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-06-17 15:05:47.968  INFO 12644 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-17 15:05:48.051  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Revoke previously assigned partitions 56y1nhk1-GenericTradeTopic-0
+2020-06-17 15:05:48.051  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Revoke previously assigned partitions 56y1nhk1-GenericTradeTopic-1
+2020-06-17 15:05:48.051  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions revoked: [56y1nhk1-GenericTradeTopic-0]
+2020-06-17 15:05:48.051  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions revoked: [56y1nhk1-GenericTradeTopic-1]
+2020-06-17 15:05:48.051  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Member consumer-56y1nhk1-GenericTradeTopic-2-60da648b-cbdd-4bbc-9fe0-629ece533f8b sending LeaveGroup request to coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 15:05:48.051  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Member consumer-56y1nhk1-GenericTradeTopic-1-d62430fb-8696-4197-b7d2-3faf2ad8bb16 sending LeaveGroup request to coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 15:05:48.052  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Revoke previously assigned partitions 56y1nhk1-GenericTradeTopic-2
+2020-06-17 15:05:48.053  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Revoke previously assigned partitions 56y1nhk1-GenericTradeTopic-3
+2020-06-17 15:05:48.053  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions revoked: [56y1nhk1-GenericTradeTopic-3]
+2020-06-17 15:05:48.053  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Member consumer-56y1nhk1-GenericTradeTopic-4-d0bd9f93-19e1-4475-94fe-4ba41b9d2d97 sending LeaveGroup request to coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 15:05:48.053  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions revoked: [56y1nhk1-GenericTradeTopic-2]
+2020-06-17 15:05:48.053  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Member consumer-56y1nhk1-GenericTradeTopic-3-24b0450a-e33c-4776-a091-78332a52a1db sending LeaveGroup request to coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 15:05:48.053  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Revoke previously assigned partitions 56y1nhk1-GenericTradeTopic-4
+2020-06-17 15:05:48.053  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-GenericTradeTopic: partitions revoked: [56y1nhk1-GenericTradeTopic-4]
+2020-06-17 15:05:48.054  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Member consumer-56y1nhk1-GenericTradeTopic-5-91ea5cc2-8169-412a-b354-c47dcfca1a26 sending LeaveGroup request to coordinator moped-03.srvs.cloudkafka.com:9094 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-3, groupId=56y1nhk1-GenericTradeTopic] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-4, groupId=56y1nhk1-GenericTradeTopic] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-2, groupId=56y1nhk1-GenericTradeTopic] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-5, groupId=56y1nhk1-GenericTradeTopic] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 15:05:48.064  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-GenericTradeTopic-1, groupId=56y1nhk1-GenericTradeTopic] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 15:05:48.065  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 15:05:48.065  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 15:05:48.509  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-GenericTradeTopic: Consumer stopped
+2020-06-17 15:05:48.509  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-GenericTradeTopic: Consumer stopped
+2020-06-17 15:05:48.509  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-GenericTradeTopic: Consumer stopped
+2020-06-17 15:05:48.513  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-GenericTradeTopic: Consumer stopped
+2020-06-17 15:05:48.555  INFO 12644 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-GenericTradeTopic: Consumer stopped
+2020-06-17 15:05:48.557  INFO 12644 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-17 15:05:48.558  INFO 12644 --- [RMI TCP Connection(10)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
