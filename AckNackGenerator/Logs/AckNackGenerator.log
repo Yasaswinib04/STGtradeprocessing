@@ -2698,3 +2698,1845 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2020-06-17 18:09:10.294  INFO 6400 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-06-17 18:09:10.295  INFO 6400 --- [RMI TCP Connection(2)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
 2020-06-17 18:09:10.367  INFO 6400 --- [RMI TCP Connection(2)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:39267}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017 because the pool has been closed.
+2020-06-17 19:20:41.205  INFO 9172 --- [main] c.c.stg.acknackgen.AckNackMicroservice   : No active profile set, falling back to default profiles: default
+2020-06-17 19:20:41.715  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 19:20:41.716  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-17 19:20:41.777  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 2 MongoDB repository interfaces.
+2020-06-17 19:20:41.790  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 19:20:41.792  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 19:20:41.805  INFO 9172 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.citi.stg.acknackgen.repository.AssetRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-17 19:20:41.806  INFO 9172 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.citi.stg.acknackgen.repository.FirmRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-17 19:20:41.806  INFO 9172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2020-06-17 19:20:42.042  INFO 9172 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97bf9fba-39cf-3d22-8167-56db85a6fe42
+2020-06-17 19:20:42.150  INFO 9172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b5ba489f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 19:20:42.332  INFO 9172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-17 19:20:42.340  INFO 9172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-17 19:20:42.340  INFO 9172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-17 19:20:42.415  INFO 9172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-17 19:20:42.416  INFO 9172 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1188 ms
+2020-06-17 19:20:42.646  INFO 9172 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=tradeprocessing-oasxz.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='TradeProcessing-shard-0'}
+2020-06-17 19:20:42.721  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-00-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:20:42.747  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-01-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:20:42.748  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-02-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:20:43.328  INFO 9172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-17 19:20:43.807  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-01-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:52642}] to tradeprocessing-shard-00-01-oasxz.mongodb.net:27017
+2020-06-17 19:20:43.807  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-00-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:42668}] to tradeprocessing-shard-00-00-oasxz.mongodb.net:27017
+2020-06-17 19:20:43.824  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:35942}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:20:43.875  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-00-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=65230500, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=null, setVersion=2, lastWriteDate=Wed Jun 17 19:20:41 IST 2020, lastUpdateTimeNanos=159256262275700}
+2020-06-17 19:20:43.881  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-01-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-01-oasxz.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=73656400, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-01-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=null, setVersion=2, lastWriteDate=Wed Jun 17 19:20:41 IST 2020, lastUpdateTimeNanos=159256270043000}
+2020-06-17 19:20:43.897  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=73159400, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=7fffffff0000000000000009, setVersion=2, lastWriteDate=Wed Jun 17 19:20:41 IST 2020, lastUpdateTimeNanos=159256285301700}
+2020-06-17 19:20:43.897  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff0000000000000009 from replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:20:43.898  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 2 from replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:20:43.898  INFO 9172 --- [cluster-ClusterId{value='5eea1fb201462a5bc1fcce2b', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:20:44.299  INFO 9172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:20:44.975  INFO 9172 --- [main] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2020-06-17 19:20:45.018  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:20:45.018  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:20:45.018  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592401845016
+2020-06-17 19:20:45.020  INFO 9172 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:20:45.022  INFO 9172 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:20:45.026  INFO 9172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:20:45.035  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:20:45.036  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:20:45.036  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592401845035
+2020-06-17 19:20:45.036  INFO 9172 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:20:45.037  INFO 9172 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:20:45.038  INFO 9172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:20:45.046  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:20:45.046  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:20:45.046  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592401845046
+2020-06-17 19:20:45.047  INFO 9172 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:20:45.047  INFO 9172 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:20:45.049  INFO 9172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:20:45.056  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:20:45.056  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:20:45.056  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592401845056
+2020-06-17 19:20:45.057  INFO 9172 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:20:45.057  INFO 9172 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:20:45.059  INFO 9172 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:20:45.065  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:20:45.065  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:20:45.065  INFO 9172 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592401845065
+2020-06-17 19:20:45.066  INFO 9172 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:20:45.066  INFO 9172 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:20:45.082  INFO 9172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-17 19:20:45.094  INFO 9172 --- [main] c.c.stg.acknackgen.AckNackMicroservice   : Started AckNackMicroservice in 5.818 seconds (JVM running for 6.637)
+2020-06-17 19:20:47.807  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:20:47.809  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:20:47.813  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:47.838  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:20:47.841  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:20:47.842  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:47.852  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:20:47.857  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:20:47.861  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:20:47.861  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:20:47.862  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:47.863  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:47.873  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:20:47.874  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:20:47.875  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:50.606  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:20:50.628  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:50.690  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:20:50.691  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:50.752  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:20:50.753  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:50.777  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:20:50.777  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:51.152  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:20:51.153  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:20:54.093  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Finished assignment for group at generation 352: {consumer-56y1nhk1-exception-group-2-2bf76d6e-3389-42d2-af10-88a5432cb46c=Assignment(partitions=[56y1nhk1-exception-topic-1]), consumer-56y1nhk1-exception-group-5-32d2a799-5fcb-40c8-9739-0543ec595a54=Assignment(partitions=[56y1nhk1-exception-topic-4]), consumer-56y1nhk1-exception-group-3-275ba85e-f945-4252-9a84-056b60509d27=Assignment(partitions=[56y1nhk1-exception-topic-2]), consumer-56y1nhk1-exception-group-4-1ff1886d-e36c-4a45-8c29-103ba266c894=Assignment(partitions=[56y1nhk1-exception-topic-3]), consumer-56y1nhk1-exception-group-1-9e242dd5-f1a4-4fd7-86dd-3fee902ea607=Assignment(partitions=[56y1nhk1-exception-topic-0])}
+2020-06-17 19:20:54.404  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Successfully joined group with generation 352
+2020-06-17 19:20:54.404  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Successfully joined group with generation 352
+2020-06-17 19:20:54.404  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Successfully joined group with generation 352
+2020-06-17 19:20:54.405  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Successfully joined group with generation 352
+2020-06-17 19:20:54.405  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Successfully joined group with generation 352
+2020-06-17 19:20:54.448  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-4
+2020-06-17 19:20:54.448  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-1
+2020-06-17 19:20:54.448  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-0
+2020-06-17 19:20:54.448  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-2
+2020-06-17 19:20:54.447  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-3
+2020-06-17 19:20:55.050  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-1 to the committed offset FetchPosition{offset=861, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 19:20:55.050  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-3 to the committed offset FetchPosition{offset=924, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-03.srvs.cloudkafka.com:9094 (id: 2 rack: null)], epoch=absent}}
+2020-06-17 19:20:55.051  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-0 to the committed offset FetchPosition{offset=789, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-03.srvs.cloudkafka.com:9094 (id: 2 rack: null)], epoch=absent}}
+2020-06-17 19:20:55.052  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-3]
+2020-06-17 19:20:55.052  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-1]
+2020-06-17 19:20:55.054  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-2 to the committed offset FetchPosition{offset=957, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-02.srvs.cloudkafka.com:9094 (id: 1 rack: null)], epoch=absent}}
+2020-06-17 19:20:55.054  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-4 to the committed offset FetchPosition{offset=640, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 19:20:55.163  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-0]
+2020-06-17 19:20:55.163  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-2]
+2020-06-17 19:20:55.163  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-4]
+2020-06-17 19:21:01.878  INFO 9172 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-17 19:21:01.880  INFO 9172 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-17 19:21:01.899  INFO 9172 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-06-17 19:21:01.974  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.a.controller.TestController        : Test Method Called
+2020-06-17 19:21:01.988  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade Object
+2020-06-17 19:21:01.988  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Getting Firm Description from cache thorugh cacheController
+2020-06-17 19:21:03.071  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.a.controller.CacheController       : Getting Firm from Database
+2020-06-17 19:21:03.896  INFO 9172 --- [http-nio-8080-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:33313}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:21:04.015  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Getting Asset Description from cache thorugh cacheController
+2020-06-17 19:21:04.017  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.a.controller.CacheController       : Getting Asset from Database
+2020-06-17 19:21:04.094  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Marshalling Ack/Nack to XML
+2020-06-17 19:21:04.142  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Generated Ack/Nack :
+2020-06-17 19:21:04.142  INFO 9172 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trade>
+    <ClientName>State Life Insurance</ClientName>
+    <TradeId>HNC2347</TradeId>
+    <SecurityDescription>Commercial Paper</SecurityDescription>
+    <Error>
+        <ErrorDateTime>22/1/1999</ErrorDateTime>
+        <Description>Error</Description>
+    </Error>
+    <TradeDate>31/05/2020</TradeDate>
+</Trade>
+
+2020-06-17 19:21:34.738  INFO 9172 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-06-17 19:21:34.997  INFO 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-17 19:21:34.999  INFO 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-06-17 19:21:35.005  WARN 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+ sun.nio.ch.SelectorImpl.select(Unknown Source)
+ sun.nio.ch.SelectorImpl.select(Unknown Source)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:21:35.006  WARN 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:21:35.008  WARN 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:21:35.009  WARN 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:21:35.010  WARN 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:21:35.022  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-0
+2020-06-17 19:21:35.023  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-0]
+2020-06-17 19:21:35.023  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-1-9e242dd5-f1a4-4fd7-86dd-3fee902ea607 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:21:35.025  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-1
+2020-06-17 19:21:35.025  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-1]
+2020-06-17 19:21:35.025  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-2-2bf76d6e-3389-42d2-af10-88a5432cb46c sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:21:35.025  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-2
+2020-06-17 19:21:35.026  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-2]
+2020-06-17 19:21:35.026  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-3-275ba85e-f945-4252-9a84-056b60509d27 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:21:35.026  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-3
+2020-06-17 19:21:35.026  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-3]
+2020-06-17 19:21:35.027  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-4-1ff1886d-e36c-4a45-8c29-103ba266c894 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:21:35.027  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-4
+2020-06-17 19:21:35.027  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-4]
+2020-06-17 19:21:35.027  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-5-32d2a799-5fcb-40c8-9739-0543ec595a54 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:21:35.039  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:21:35.039  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:21:35.039  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:21:35.039  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:21:35.039  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:21:35.040  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:21:35.040  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:21:35.040  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:21:35.040  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:21:35.040  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:21:35.284  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:21:35.298  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:21:35.302  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:21:35.302  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:21:35.311  INFO 9172 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:21:35.439  INFO 9172 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-17 19:21:35.516  INFO 9172 --- [RMI TCP Connection(3)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:33313}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017 because the pool has been closed.
+2020-06-17 19:24:41.202  INFO 5628 --- [main] c.c.stg.acknackgen.AckNackMicroservice   : No active profile set, falling back to default profiles: default
+2020-06-17 19:24:41.788  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 19:24:41.789  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-17 19:24:41.854  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 2 MongoDB repository interfaces.
+2020-06-17 19:24:41.871  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 19:24:41.873  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 19:24:41.889  INFO 5628 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.citi.stg.acknackgen.repository.AssetRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-17 19:24:41.890  INFO 5628 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.citi.stg.acknackgen.repository.FirmRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-17 19:24:41.890  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-06-17 19:24:42.113  INFO 5628 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97bf9fba-39cf-3d22-8167-56db85a6fe42
+2020-06-17 19:24:42.213  INFO 5628 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5016c730] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 19:24:42.399  INFO 5628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-17 19:24:42.407  INFO 5628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-17 19:24:42.408  INFO 5628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-17 19:24:42.493  INFO 5628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-17 19:24:42.493  INFO 5628 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1271 ms
+2020-06-17 19:24:42.719  INFO 5628 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=tradeprocessing-oasxz.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='TradeProcessing-shard-0'}
+2020-06-17 19:24:42.785  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-00-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:24:42.816  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-01-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:24:42.817  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-02-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:24:43.394  INFO 5628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-17 19:24:43.846  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:40803}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:24:43.846  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-01-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:52642}] to tradeprocessing-shard-00-01-oasxz.mongodb.net:27017
+2020-06-17 19:24:43.846  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-00-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:40171}] to tradeprocessing-shard-00-00-oasxz.mongodb.net:27017
+2020-06-17 19:24:43.922  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-00-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=72125500, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=null, setVersion=2, lastWriteDate=Wed Jun 17 19:24:33 IST 2020, lastUpdateTimeNanos=159496308350400}
+2020-06-17 19:24:43.922  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-01-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-01-oasxz.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=71929100, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-01-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=null, setVersion=2, lastWriteDate=Wed Jun 17 19:24:33 IST 2020, lastUpdateTimeNanos=159496308350600}
+2020-06-17 19:24:43.926  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=77703600, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=7fffffff0000000000000009, setVersion=2, lastWriteDate=Wed Jun 17 19:24:33 IST 2020, lastUpdateTimeNanos=159496313490000}
+2020-06-17 19:24:43.926  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff0000000000000009 from replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:24:43.926  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 2 from replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:24:43.926  INFO 5628 --- [cluster-ClusterId{value='5eea20a24919581f0247f2e9', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:24:44.415  INFO 5628 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:24:44.642  INFO 5628 --- [main] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2020-06-17 19:24:44.692  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:24:44.692  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:24:44.692  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402084690
+2020-06-17 19:24:44.696  INFO 5628 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:24:44.698  INFO 5628 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:24:44.703  INFO 5628 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:24:44.714  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:24:44.714  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:24:44.715  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402084714
+2020-06-17 19:24:44.715  INFO 5628 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:24:44.716  INFO 5628 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:24:44.718  INFO 5628 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:24:44.746  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:24:44.746  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:24:44.746  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402084745
+2020-06-17 19:24:44.746  INFO 5628 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:24:44.747  INFO 5628 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:24:44.750  INFO 5628 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:24:44.758  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:24:44.758  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:24:44.758  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402084758
+2020-06-17 19:24:44.759  INFO 5628 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:24:44.759  INFO 5628 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:24:44.761  INFO 5628 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:24:44.768  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:24:44.768  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:24:44.768  INFO 5628 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402084768
+2020-06-17 19:24:44.769  INFO 5628 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:24:44.769  INFO 5628 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:24:44.790  INFO 5628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-17 19:24:44.801  INFO 5628 --- [main] c.c.stg.acknackgen.AckNackMicroservice   : Started AckNackMicroservice in 5.614 seconds (JVM running for 6.439)
+2020-06-17 19:24:47.557  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:24:47.557  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:24:47.557  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:24:47.559  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:24:47.559  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:24:47.559  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:24:47.561  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:24:47.563  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:24:47.563  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:47.563  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:24:47.564  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:24:47.564  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:47.565  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:47.565  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:47.565  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:50.216  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:24:50.242  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:50.246  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:24:50.246  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:50.323  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:24:50.323  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:50.516  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:24:50.516  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:50.518  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:24:50.518  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:24:53.532  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Finished assignment for group at generation 354: {consumer-56y1nhk1-exception-group-2-9b9f7fc3-4d2d-44b1-b676-9bb8767858a7=Assignment(partitions=[56y1nhk1-exception-topic-1]), consumer-56y1nhk1-exception-group-1-bda93848-5656-4b3c-8fe7-2c77dc8d90a5=Assignment(partitions=[56y1nhk1-exception-topic-0]), consumer-56y1nhk1-exception-group-4-2b35c7b7-3dcf-44a7-820b-3f642d791d60=Assignment(partitions=[56y1nhk1-exception-topic-3]), consumer-56y1nhk1-exception-group-3-88e713d5-3ce1-4916-925f-ca27fc612006=Assignment(partitions=[56y1nhk1-exception-topic-2]), consumer-56y1nhk1-exception-group-5-c9635331-1e4c-4ca7-8673-1e1b224b38f6=Assignment(partitions=[56y1nhk1-exception-topic-4])}
+2020-06-17 19:24:53.857  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Successfully joined group with generation 354
+2020-06-17 19:24:53.859  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Successfully joined group with generation 354
+2020-06-17 19:24:53.859  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Successfully joined group with generation 354
+2020-06-17 19:24:53.860  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Successfully joined group with generation 354
+2020-06-17 19:24:53.859  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Successfully joined group with generation 354
+2020-06-17 19:24:53.866  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-2
+2020-06-17 19:24:53.866  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-0
+2020-06-17 19:24:53.866  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-3
+2020-06-17 19:24:53.866  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-1
+2020-06-17 19:24:53.866  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-4
+2020-06-17 19:24:54.124  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-2 to the committed offset FetchPosition{offset=957, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-02.srvs.cloudkafka.com:9094 (id: 1 rack: null)], epoch=absent}}
+2020-06-17 19:24:54.124  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-4 to the committed offset FetchPosition{offset=640, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 19:24:54.124  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-1 to the committed offset FetchPosition{offset=861, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 19:24:54.125  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-3 to the committed offset FetchPosition{offset=924, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-03.srvs.cloudkafka.com:9094 (id: 2 rack: null)], epoch=absent}}
+2020-06-17 19:24:54.126  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-4]
+2020-06-17 19:24:54.141  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-0 to the committed offset FetchPosition{offset=789, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-03.srvs.cloudkafka.com:9094 (id: 2 rack: null)], epoch=absent}}
+2020-06-17 19:24:54.231  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-3]
+2020-06-17 19:24:54.231  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-1]
+2020-06-17 19:24:54.231  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-2]
+2020-06-17 19:24:54.247  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-0]
+2020-06-17 19:24:59.055  INFO 5628 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-17 19:24:59.056  INFO 5628 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-17 19:24:59.065  INFO 5628 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-17 19:24:59.112  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.a.controller.TestController        : Test Method Called
+2020-06-17 19:24:59.125  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade Object
+2020-06-17 19:24:59.126  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade ObjectTrade [tradeId=HNC2347, firm=SLI, error=SourceError [errordt=22/1/1999, description=Error], cashSecurity=CashSecurity [securityType=CP, securityIdentifier=XXX4567], tradeDate=31/05/2020]
+2020-06-17 19:24:59.126  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Getting Firm Description from cache thorugh cacheController
+2020-06-17 19:24:59.944  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Getting Asset Description from cache thorugh cacheController
+2020-06-17 19:24:59.947  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Marshalling Ack/Nack to XML
+2020-06-17 19:25:00.193  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : Generated Ack/Nack :
+2020-06-17 19:25:00.193  INFO 5628 --- [http-nio-8080-exec-2] c.c.s.acknackgen.service.ConvertService  : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trade>
+    <ClientName>State Life Insurance</ClientName>
+    <TradeId>HNC2347</TradeId>
+    <SecurityDescription>Commercial Paper</SecurityDescription>
+    <Error>
+        <ErrorDateTime>22/1/1999</ErrorDateTime>
+        <Description>Error</Description>
+    </Error>
+    <TradeDate>31/05/2020</TradeDate>
+</Trade>
+
+2020-06-17 19:27:03.089  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Node 0 was unable to process the fetch request with (sessionId=1682510035, epoch=166): FETCH_SESSION_ID_NOT_FOUND.
+2020-06-17 19:27:03.738  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Node 0 was unable to process the fetch request with (sessionId=1663382962, epoch=165): FETCH_SESSION_ID_NOT_FOUND.
+2020-06-17 19:27:05.859  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Node 1 was unable to process the fetch request with (sessionId=1668798813, epoch=172): FETCH_SESSION_ID_NOT_FOUND.
+2020-06-17 19:27:07.986  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Node 2 was unable to process the fetch request with (sessionId=49061541, epoch=168): FETCH_SESSION_ID_NOT_FOUND.
+2020-06-17 19:27:08.021  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Node 2 was unable to process the fetch request with (sessionId=1924722391, epoch=170): FETCH_SESSION_ID_NOT_FOUND.
+2020-06-17 19:27:38.139  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.kafka.consumer.Consumer          : #### -> Consuming Trade from exception topic
+2020-06-17 19:27:38.139  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.ProducerController    : Call to convertService to generate ackNack
+2020-06-17 19:27:38.139  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade Object
+2020-06-17 19:27:38.139  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade ObjectTrade [tradeId=HNC2347, firm=SLI, error=SourceError [errordt=11/11/2019, description=DUPLICATE TRADE], cashSecurity=CashSecurity [securityType=EQ, securityIdentifier=XXX4586], tradeDate=11/11/2019]
+2020-06-17 19:27:38.139  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Getting Firm Description from cache thorugh cacheController
+2020-06-17 19:27:38.142  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Getting Asset Description from cache thorugh cacheController
+2020-06-17 19:27:38.147  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.CacheController       : Getting Asset from Database
+2020-06-17 19:27:38.745  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:40760}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:27:38.848  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Marshalling Ack/Nack to XML
+2020-06-17 19:27:38.851  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Generated Ack/Nack :
+2020-06-17 19:27:38.851  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trade>
+    <ClientName>State Life Insurance</ClientName>
+    <TradeId>HNC2347</TradeId>
+    <SecurityDescription>Equities</SecurityDescription>
+    <Error>
+        <ErrorDateTime>11/11/2019</ErrorDateTime>
+        <Description>DUPLICATE TRADE</Description>
+    </Error>
+    <TradeDate>11/11/2019</TradeDate>
+</Trade>
+
+2020-06-17 19:27:38.851  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.ProducerController    : Call Producer to produce ack/nack
+2020-06-17 19:27:38.852  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.kafka.producer.Producer          : #### -> Producing message to topic ack-nack topic
+2020-06-17 19:27:38.855  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-06-17 19:27:38.929  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:27:38.930  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:27:38.930  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402258929
+2020-06-17 19:27:41.573  INFO 5628 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:27:41.580  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.kafka.consumer.Consumer          : #### -> Consuming Trade from exception topic
+2020-06-17 19:27:41.580  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.ProducerController    : Call to convertService to generate ackNack
+2020-06-17 19:27:41.580  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade Object
+2020-06-17 19:27:41.580  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade ObjectTrade [tradeId=XLY2567, firm=JDC, error=SourceError [errordt=, description=], cashSecurity=CashSecurity [securityType=CP, securityIdentifier=XXX4123], tradeDate=05/02/2020]
+2020-06-17 19:27:41.580  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Getting Firm Description from cache thorugh cacheController
+2020-06-17 19:27:41.582  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.CacheController       : Getting Firm from Database
+2020-06-17 19:27:41.654  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Getting Asset Description from cache thorugh cacheController
+2020-06-17 19:27:41.656  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Marshalling Ack/Nack to XML
+2020-06-17 19:27:41.659  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Generated Ack/Nack :
+2020-06-17 19:27:41.659  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trade>
+    <ClientName>Johnson Data Company</ClientName>
+    <TradeId>XLY2567</TradeId>
+    <SecurityDescription>Commercial Paper</SecurityDescription>
+    <Error>
+        <ErrorDateTime></ErrorDateTime>
+        <Description></Description>
+    </Error>
+    <TradeDate>05/02/2020</TradeDate>
+</Trade>
+
+2020-06-17 19:27:41.659  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.ProducerController    : Call Producer to produce ack/nack
+2020-06-17 19:27:41.659  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.kafka.producer.Producer          : #### -> Producing message to topic ack-nack topic
+2020-06-17 19:27:41.660  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.kafka.consumer.Consumer          : #### -> Consuming Trade from exception topic
+2020-06-17 19:27:41.660  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.ProducerController    : Call to convertService to generate ackNack
+2020-06-17 19:27:41.660  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade Object
+2020-06-17 19:27:41.660  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade ObjectTrade [tradeId=QPZ9061, firm=FAC, error=SourceError [errordt=21/04/2020, description=DUPLICATE TRADE], cashSecurity=CashSecurity [securityType=FD, securityIdentifier=XXX2173], tradeDate=18/04/2020]
+2020-06-17 19:27:41.660  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Getting Firm Description from cache thorugh cacheController
+2020-06-17 19:27:41.661  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.CacheController       : Getting Firm from Database
+2020-06-17 19:27:41.734  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Getting Asset Description from cache thorugh cacheController
+2020-06-17 19:27:41.735  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.CacheController       : Getting Asset from Database
+2020-06-17 19:27:41.805  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Marshalling Ack/Nack to XML
+2020-06-17 19:27:41.807  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : Generated Ack/Nack :
+2020-06-17 19:27:41.808  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.acknackgen.service.ConvertService  : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trade>
+    <ClientName>Finance Analysis Company</ClientName>
+    <TradeId>QPZ9061</TradeId>
+    <SecurityDescription>Fixed Deposit</SecurityDescription>
+    <Error>
+        <ErrorDateTime>21/04/2020</ErrorDateTime>
+        <Description>DUPLICATE TRADE</Description>
+    </Error>
+    <TradeDate>18/04/2020</TradeDate>
+</Trade>
+
+2020-06-17 19:27:41.808  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.controller.ProducerController    : Call Producer to produce ack/nack
+2020-06-17 19:27:41.808  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.s.a.kafka.producer.Producer          : #### -> Producing message to topic ack-nack topic
+2020-06-17 19:28:15.698  INFO 5628 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-06-17 19:28:15.898  INFO 5628 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-17 19:28:15.901  INFO 5628 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-06-17 19:28:15.906  WARN 5628 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+ sun.nio.ch.SelectorImpl.select(Unknown Source)
+ sun.nio.ch.SelectorImpl.select(Unknown Source)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:28:15.907  WARN 5628 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:28:15.908  WARN 5628 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:28:15.917  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-1
+2020-06-17 19:28:15.917  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-2
+2020-06-17 19:28:15.917  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-0
+2020-06-17 19:28:15.917  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-3
+2020-06-17 19:28:15.917  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-4
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-3]
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-4]
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-0]
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-1]
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-2]
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-1-bda93848-5656-4b3c-8fe7-2c77dc8d90a5 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-2-9b9f7fc3-4d2d-44b1-b676-9bb8767858a7 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-3-88e713d5-3ce1-4916-925f-ca27fc612006 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-5-c9635331-1e4c-4ca7-8673-1e1b224b38f6 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:28:15.918  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-4-2b35c7b7-3dcf-44a7-820b-3f642d791d60 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:28:15.920  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:28:15.920  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:28:15.920  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:28:15.921  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:28:15.921  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:28:15.920  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:28:15.921  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:28:15.920  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:28:15.921  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:28:15.921  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:28:16.255  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:28:16.261  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:28:16.264  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:28:16.264  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:28:16.284  INFO 5628 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:28:16.410  INFO 5628 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-17 19:28:16.411  INFO 5628 --- [RMI TCP Connection(4)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2020-06-17 19:28:16.485  INFO 5628 --- [RMI TCP Connection(4)-127.0.0.1] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:40760}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017 because the pool has been closed.
+2020-06-17 19:28:41.841  INFO 13296 --- [main] c.c.stg.acknackgen.AckNackMicroservice   : No active profile set, falling back to default profiles: default
+2020-06-17 19:28:42.415  INFO 13296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 19:28:42.415  INFO 13296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-17 19:28:42.482  INFO 13296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 2 MongoDB repository interfaces.
+2020-06-17 19:28:42.496  INFO 13296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-17 19:28:42.497  INFO 13296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-17 19:28:42.511  INFO 13296 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.citi.stg.acknackgen.repository.AssetRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-17 19:28:42.512  INFO 13296 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.citi.stg.acknackgen.repository.FirmRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-17 19:28:42.512  INFO 13296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2020-06-17 19:28:42.740  INFO 13296 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=97bf9fba-39cf-3d22-8167-56db85a6fe42
+2020-06-17 19:28:42.847  INFO 13296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$46187350] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-17 19:28:43.036  INFO 13296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-17 19:28:43.046  INFO 13296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-17 19:28:43.046  INFO 13296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-17 19:28:43.122  INFO 13296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-17 19:28:43.123  INFO 13296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1267 ms
+2020-06-17 19:28:43.364  INFO 13296 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=tradeprocessing-oasxz.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='TradeProcessing-shard-0'}
+2020-06-17 19:28:43.424  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-00-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:28:43.449  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-01-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:28:43.450  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-srv-tradeprocessing-oasxz.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server tradeprocessing-shard-00-02-oasxz.mongodb.net:27017 to client view of cluster
+2020-06-17 19:28:44.004  INFO 13296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-17 19:28:44.457  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-01-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:52642}] to tradeprocessing-shard-00-01-oasxz.mongodb.net:27017
+2020-06-17 19:28:44.457  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:40760}] to tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:28:44.457  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-00-oasxz.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:40171}] to tradeprocessing-shard-00-00-oasxz.mongodb.net:27017
+2020-06-17 19:28:44.526  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-00-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=67575500, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=null, setVersion=2, lastWriteDate=Wed Jun 17 19:28:41 IST 2020, lastUpdateTimeNanos=159736913596200}
+2020-06-17 19:28:44.527  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-01-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-01-oasxz.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=70464500, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-01-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=null, setVersion=2, lastWriteDate=Wed Jun 17 19:28:41 IST 2020, lastUpdateTimeNanos=159736915934100}
+2020-06-17 19:28:44.533  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=76533900, setName='TradeProcessing-shard-0', canonicalAddress=tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, hosts=[tradeprocessing-shard-00-02-oasxz.mongodb.net:27017, tradeprocessing-shard-00-00-oasxz.mongodb.net:27017, tradeprocessing-shard-00-01-oasxz.mongodb.net:27017], passives=[], arbiters=[], primary='tradeprocessing-shard-00-02-oasxz.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}]}, electionId=7fffffff0000000000000009, setVersion=2, lastWriteDate=Wed Jun 17 19:28:41 IST 2020, lastUpdateTimeNanos=159736922001700}
+2020-06-17 19:28:44.534  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff0000000000000009 from replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:28:44.534  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 2 from replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:28:44.534  INFO 13296 --- [cluster-ClusterId{value='5eea2193d203210ce42ff946', description='null'}-tradeprocessing-shard-00-02-oasxz.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary tradeprocessing-shard-00-02-oasxz.mongodb.net:27017
+2020-06-17 19:28:45.029  INFO 13296 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:28:45.254  INFO 13296 --- [main] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2020-06-17 19:28:45.339  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:28:45.340  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:28:45.340  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402325336
+2020-06-17 19:28:45.345  INFO 13296 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:28:45.349  INFO 13296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:28:45.355  INFO 13296 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:28:45.368  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:28:45.368  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:28:45.369  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402325368
+2020-06-17 19:28:45.369  INFO 13296 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:28:45.370  INFO 13296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:28:45.373  INFO 13296 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:28:45.392  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:28:45.393  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:28:45.393  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402325392
+2020-06-17 19:28:45.394  INFO 13296 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:28:45.395  INFO 13296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:28:45.398  INFO 13296 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:28:45.409  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:28:45.409  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:28:45.410  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402325409
+2020-06-17 19:28:45.410  INFO 13296 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:28:45.411  INFO 13296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:28:45.416  INFO 13296 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [moped-01.srvs.cloudkafka.com:9094, moped-02.srvs.cloudkafka.com:9094, moped-03.srvs.cloudkafka.com:9094]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 56y1nhk1-exception-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = SCRAM-SHA-256
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class com.citi.stg.acknackgen.kafka.consumer.TradeDeserializer
+
+2020-06-17 19:28:45.425  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-06-17 19:28:45.425  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-06-17 19:28:45.425  INFO 13296 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1592402325425
+2020-06-17 19:28:45.426  INFO 13296 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Subscribed to topic(s): 56y1nhk1-exception-topic
+2020-06-17 19:28:45.426  INFO 13296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-06-17 19:28:45.453  INFO 13296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-17 19:28:45.470  INFO 13296 --- [main] c.c.stg.acknackgen.AckNackMicroservice   : Started AckNackMicroservice in 5.532 seconds (JVM running for 6.3)
+2020-06-17 19:28:48.215  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:28:48.216  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:28:48.220  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:48.597  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:28:48.860  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:28:48.861  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:49.099  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:28:49.100  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:28:49.102  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:49.228  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:28:49.230  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:28:49.231  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:49.696  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Cluster ID: oKidZzIGS8CpolkrwCTN7A
+2020-06-17 19:28:49.702  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Discovered group coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null)
+2020-06-17 19:28:49.703  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:50.885  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:28:50.886  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:51.610  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:28:51.612  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:51.874  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:28:51.877  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:52.507  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:28:52.507  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:52.864  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-06-17 19:28:52.864  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] (Re-)joining group
+2020-06-17 19:28:54.144  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Finished assignment for group at generation 356: {consumer-56y1nhk1-exception-group-5-330ce8fa-25bb-4f14-9393-49f3812ee50a=Assignment(partitions=[56y1nhk1-exception-topic-4]), consumer-56y1nhk1-exception-group-3-d824c944-92df-4493-96f4-e35013d5c1ac=Assignment(partitions=[56y1nhk1-exception-topic-2]), consumer-56y1nhk1-exception-group-1-01e42bb2-aa5f-4fae-bb9f-5bc0de19cbd7=Assignment(partitions=[56y1nhk1-exception-topic-0]), consumer-56y1nhk1-exception-group-2-53d78702-0a1c-46ff-abee-d678261a14a0=Assignment(partitions=[56y1nhk1-exception-topic-1]), consumer-56y1nhk1-exception-group-4-58243610-d759-46da-951e-dfdd9993184a=Assignment(partitions=[56y1nhk1-exception-topic-3])}
+2020-06-17 19:28:54.464  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Successfully joined group with generation 356
+2020-06-17 19:28:54.467  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Successfully joined group with generation 356
+2020-06-17 19:28:54.467  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Successfully joined group with generation 356
+2020-06-17 19:28:54.468  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Successfully joined group with generation 356
+2020-06-17 19:28:54.475  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-0
+2020-06-17 19:28:54.476  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-3
+2020-06-17 19:28:54.476  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-1
+2020-06-17 19:28:54.477  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-2
+2020-06-17 19:28:54.478  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Successfully joined group with generation 356
+2020-06-17 19:28:54.479  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Adding newly assigned partitions: 56y1nhk1-exception-topic-4
+2020-06-17 19:28:54.734  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-0 to the committed offset FetchPosition{offset=792, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-03.srvs.cloudkafka.com:9094 (id: 2 rack: null)], epoch=absent}}
+2020-06-17 19:28:54.735  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-0]
+2020-06-17 19:28:54.736  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-3 to the committed offset FetchPosition{offset=924, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-03.srvs.cloudkafka.com:9094 (id: 2 rack: null)], epoch=absent}}
+2020-06-17 19:28:54.739  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-2 to the committed offset FetchPosition{offset=957, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-02.srvs.cloudkafka.com:9094 (id: 1 rack: null)], epoch=absent}}
+2020-06-17 19:28:54.744  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-1 to the committed offset FetchPosition{offset=861, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 19:28:54.746  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Setting offset for partition 56y1nhk1-exception-topic-4 to the committed offset FetchPosition{offset=640, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[moped-01.srvs.cloudkafka.com:9094 (id: 0 rack: null)], epoch=absent}}
+2020-06-17 19:28:54.846  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-2]
+2020-06-17 19:28:54.846  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-1]
+2020-06-17 19:28:54.846  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-3]
+2020-06-17 19:28:54.861  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions assigned: [56y1nhk1-exception-topic-4]
+2020-06-17 19:29:02.536  INFO 13296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-17 19:29:02.536  INFO 13296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-17 19:29:02.545  INFO 13296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-17 19:29:02.580  INFO 13296 --- [http-nio-8080-exec-1] c.c.s.a.controller.TestController        : Test Method Called
+2020-06-17 19:29:02.587  INFO 13296 --- [http-nio-8080-exec-1] c.c.s.acknackgen.service.ConvertService  : Setting the Fields of dest_Trade Object input trade :Trade [tradeId=HNC2347, firm=SLI, error=SourceError [errordt=22/1/1999, description=Error], cashSecurity=CashSecurity [securityType=CP, securityIdentifier=XXX4567], tradeDate=31/05/2020]
+2020-06-17 19:29:02.587  INFO 13296 --- [http-nio-8080-exec-1] c.c.s.acknackgen.service.ConvertService  : Getting Firm Description from cache thorugh cacheController
+2020-06-17 19:29:03.311  INFO 13296 --- [http-nio-8080-exec-1] c.c.s.acknackgen.service.ConvertService  : Getting Asset Description from cache thorugh cacheController
+2020-06-17 19:29:03.314  INFO 13296 --- [http-nio-8080-exec-1] c.c.s.acknackgen.service.ConvertService  : Marshalling Ack/Nack to XML
+2020-06-17 19:29:03.624  INFO 13296 --- [http-nio-8080-exec-1] c.c.s.acknackgen.service.ConvertService  : Generated Ack/Nack :<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Trade>
+    <ClientName>State Life Insurance</ClientName>
+    <TradeId>HNC2347</TradeId>
+    <SecurityDescription>Commercial Paper</SecurityDescription>
+    <Error>
+        <ErrorDateTime>22/1/1999</ErrorDateTime>
+        <Description>Error</Description>
+    </Error>
+    <TradeDate>31/05/2020</TradeDate>
+</Trade>
+
+2020-06-17 19:29:18.251  INFO 13296 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-06-17 19:29:18.443  INFO 13296 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-17 19:29:18.445  INFO 13296 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-06-17 19:29:18.449  WARN 13296 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+ sun.nio.ch.SelectorImpl.select(Unknown Source)
+ sun.nio.ch.SelectorImpl.select(Unknown Source)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:29:18.451  WARN 13296 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:29:18.452  WARN 13296 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:243)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Unknown Source)
+2020-06-17 19:29:18.460  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-2
+2020-06-17 19:29:18.460  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-3
+2020-06-17 19:29:18.460  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-1
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-1]
+2020-06-17 19:29:18.460  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-0
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-2]
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Revoke previously assigned partitions 56y1nhk1-exception-topic-4
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-0]
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-4]
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-3-d824c944-92df-4493-96f4-e35013d5c1ac sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-1-01e42bb2-aa5f-4fae-bb9f-5bc0de19cbd7 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-5-330ce8fa-25bb-4f14-9393-49f3812ee50a sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : 56y1nhk1-exception-group: partitions revoked: [56y1nhk1-exception-topic-3]
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-2-53d78702-0a1c-46ff-abee-d678261a14a0 sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:29:18.461  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Member consumer-56y1nhk1-exception-group-4-58243610-d759-46da-951e-dfdd9993184a sending LeaveGroup request to coordinator moped-01.srvs.cloudkafka.com:9094 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-2, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-4, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-5, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-3, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:29:18.464  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-56y1nhk1-exception-group-1, groupId=56y1nhk1-exception-group] Unsubscribed all topics or patterns and assigned partitions
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:29:18.464  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:29:18.463  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-06-17 19:29:18.713  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:29:18.720  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:29:18.723  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:29:18.728  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:29:18.730  INFO 13296 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] essageListenerContainer$ListenerConsumer : 56y1nhk1-exception-group: Consumer stopped
+2020-06-17 19:29:18.856  INFO 13296 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

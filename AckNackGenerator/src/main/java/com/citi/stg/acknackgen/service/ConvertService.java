@@ -35,16 +35,17 @@ public class ConvertService {
 
 		String opXml = null;
 		try {
-
-			logger.info("Setting the Fields of dest_Trade Object");
-
+	
+			logger.info("Setting the Fields of dest_Trade Object input trade :"+trade.toString());
 			// Call to method to get Firm Description from the Cache/Database
+			logger.info("Getting Firm Description from cache thorugh cacheController");
 			Firm firm = cacheController.findFirmByCode(trade.getFirm());
 			opTrade.setClientName(firm.getFirmDesc());
 
 			opTrade.setError(new dest_Error(trade.getError().getErrordt(), trade.getError().getDescription()));
 
 			// Call to method to get Asset Type Description from the Cache/Database
+			logger.info("Getting Asset Description from cache thorugh cacheController");
 			Asset asset = cacheController.findAssetByCode(trade.getCashSecurity().getSecurityType());
 			opTrade.setSecurityDescription(asset.getAssetTypeDesc());
 
@@ -54,7 +55,7 @@ public class ConvertService {
 			// Call to method that converts opTrade object to XML
 			opXml = covertToXml();
 		} catch (Exception e) {
-			logger.error("Exception occured in method convertObject Failed to generate trade object for ack/nack :",e);
+			logger.error("Exception occured in method convertObject Failed to generate trade object for ack/nack for input trade :"+trade.toString(),e);
 			e.printStackTrace();
 		}
 		return opXml;
@@ -81,13 +82,12 @@ public class ConvertService {
 			opXml = sw.toString();
 
 		} catch (JAXBException e) {
-			logger.error("JAXB Exception encountered in covertToXml method Failed to generate XML from trade :", e);
+			logger.error("JAXB Exception encountered in covertToXml method Failed to generate XML from trade for trade :"+opTrade.toString(), e);
 			e.printStackTrace();
 		}
 
 		// Log XML to console
-		logger.info("Generated Ack/Nack :");
-		logger.info(opXml);
+		logger.info("Generated Ack/Nack :"+opXml);
 
 		return opXml;
 	}
