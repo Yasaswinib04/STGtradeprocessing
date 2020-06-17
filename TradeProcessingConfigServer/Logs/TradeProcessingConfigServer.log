@@ -447,3 +447,4 @@ Caused by: java.net.UnknownHostException: C
 2020-06-17 19:24:41.141  INFO 3464 --- [http-nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///C:/Citi/STGtradeprocessing/ConfigDir/AckNackGenerator.properties
 2020-06-17 19:24:41.142  INFO 3464 --- [http-nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///C:/Citi/STGtradeprocessing/ConfigDir/application.properties
 2020-06-17 19:28:41.785  INFO 3464 --- [http-nio-8888-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///C:/Citi/STGtradeprocessing/ConfigDir/AckNackGenerator.properties
+2020-06-17 19:28:41.785  INFO 3464 --- [http-nio-8888-exec-5] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:///C:/Citi/STGtradeprocessing/ConfigDir/application.properties
