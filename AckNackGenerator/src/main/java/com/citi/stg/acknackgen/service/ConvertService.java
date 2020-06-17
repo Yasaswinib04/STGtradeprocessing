@@ -89,7 +89,6 @@ public class ConvertService {
 		logger.info("Generated Ack/Nack :");
 		logger.info(opXml);
 
-		System.out.println(opXml);
 		return opXml;
 	}
 }
