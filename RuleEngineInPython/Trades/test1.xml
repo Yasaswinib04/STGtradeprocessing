@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>           
+<AlpsUploader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                
+<Header>                
+        <Sender>FTP Info</Sender>        
+</Header>                
+<Trades>                
+    <Trade>                
+        <TradeId>01234567890123456789</TradeId>        
+        <Firm>01234567890123456789</Firm>        
+        <CashSecurity>       
+                <SecurityType>EQ</SecurityType>
+                <SecurityIdentifier> XX4567</SecurityIdentifier>
+        </CashSecurity>    
+        <TradeDate>13-05-2020 12:24:55</TradeDate>        
+        <IndexFlag>Y</IndexFlag>
+    </Trade>                
+</Trades>                
+</AlpsUploader>
+
+
+
+
+
+
+<!-- <?xml version="1.0"?>
+<country name="Afghanistan">
+  <population>32225560</population>
+  <area>652000</area>
+  <capital>Kabul$%%%%</capital>
+</country> -->
+
+
+<!-- <AlpsUploader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Person Title="Mr" xmlns:ex="http://www.topologi.com/example">
+    <Name>Eddie</Name>
+    <Gender>Female</Gender>
+</Person>
+</AlpsUploader> -->
+
+<!-- <AlpsUploader xmlns:ex="http://www.w3.org/2001/XMLSchema-instance">
+<Person Title="Mr">
+    <Name>Eddie</Name>
+    <Gender>Female</Gender>
+</Person>
+<Person Title="Mr">
+    <Name>Golu</Name>
+    <Gender>Female</Gender>
+</Person>
+</AlpsUploader>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <sch:ns uri="http://www.topologi.com/example" prefix="ex"/>
+    <sch:pattern id="CheckStructure">
+        <sch:rule context="ex:Person">
+            <sch:assert test="@Title">The element Person must have a Title attribute</sch:assert>
+            <sch:assert test="count(ex:*) = 2 and count(ex:Name) = 1 and count(ex:Gender) = 1">The element Person should have the child elements Name and Gender.</sch:assert>
+            <sch:assert test="ex:*[1] = ex:Name">The element Name must appear before element Gender.</sch:assert>
+        </sch:rule>
+    </sch:pattern>
+    <sch:pattern id="CheckCo-occurrenceConstraints">
+        <sch:rule context="ex:Person">
+            <sch:assert test="(@Title = 'Mr' and ex:Gender = 'Male') or @Title != 'Mr'">If the Title is "Mr" then the gender of the person must be "Male".</sch:assert>
+        </sch:rule>
+    </sch:pattern>
+</sch:schema>  -->
+
+
+
+
+<!-- <securities>
+<security>EQ</security>
+</securities> -->
+
+<!-- <Trades>
+	<Trade>
+		<TradeId>123456</TradeId>
+	</Trade>
+	<Trade>
+		<TradeId>123456</TradeId>
+	</Trade>
+</Trades> -->
+
+
+ <!--  <pattern id="checkForStructure">
+  	<rule context="Trades"><assert test="Trdaes">Trades part must not be empty</assert></rule>
+  	<rule context="Trade">
+  		<assert test=".">Trade part must not be empty</assert>
+  		<assert test="./TradeId">TradeId is manadatory</assert>
+  	</rule>
+  </pattern> -->
+
+
